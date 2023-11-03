@@ -1,15 +1,14 @@
-<header
-  class="p-5 flex flex-col justify-center items-center bg-bkgSecundary gap-3 md:flex-row md:grid-cols-3 md:gap-[100px]">
-  <h3 class="cursor-pointer"> RODRIGO VIEIRA </h3>
+<header class="p-5 gap-3 flex flex-col justify-center items-center md:flex-row md:gap-[100px]">
+  <a class="cursor-pointer" [routerLink]="['/home']"> RODRIGO VIEIRA </a>
   <ul class="flex flex-row gap-5">
-    <li class="cursor-pointer hover:text-primaryLight duration-500">
-      sobre
+    <li class="cursor-pointer hover:text-primaryLight duration-500" routerLinkActive="active">
+      <a [routerLink]="['/about']">sobre</a>
     </li>
-    <li class="cursor-pointer hover:text-primaryLight duration-500">
+    <li class="cursor-pointer hover:text-primaryLight duration-500" routerLinkActive="active">
       projetos
     </li>
-    <li class="cursor-pointer hover:text-primaryLight duration-500">
-      contatos
+    <li class="cursor-pointer hover:text-primaryLight duration-500" routerLinkActive="active">
+      contato
     </li>
   </ul>
   <ul class="flex gap-8">
