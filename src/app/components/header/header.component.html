@@ -1,10 +1,26 @@
-<header class="header">
-  <section class="header__left">
-    <p>RODRIGO VIEIRA</p>
-  </section>
-  <section class="header__right">
-    <fa-icon class="header__right--item" [icon]="['fab', 'linkedin']" size="xl"></fa-icon>
-    <fa-icon class="header__right--item" [icon]="['fab', 'github']" size="xl"></fa-icon>
-    <fa-icon class="header__right--item" [icon]="['fab', 'whatsapp']" size="xl"></fa-icon>
-  </section>
+<header
+  class="p-5 flex flex-col justify-center items-center bg-bkgSecundary gap-3 md:flex-row md:grid-cols-3 md:gap-[100px]">
+  <h3 class="cursor-pointer"> RODRIGO VIEIRA </h3>
+  <ul class="flex flex-row gap-5">
+    <li class="cursor-pointer hover:text-primaryLight duration-500">
+      sobre
+    </li>
+    <li class="cursor-pointer hover:text-primaryLight duration-500">
+      projetos
+    </li>
+    <li class="cursor-pointer hover:text-primaryLight duration-500">
+      contatos
+    </li>
+  </ul>
+  <ul class="flex gap-8">
+    <li class="cursor-pointer hover:text-primaryLight duration-500">
+      <fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon>
+    </li>
+    <li class="cursor-pointer hover:text-primaryLight duration-500">
+      <fa-icon [icon]="['fab', 'github']" size="xl"></fa-icon>
+    </li>
+    <li class="cursor-pointer hover:text-primaryLight duration-500">
+      <fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon>
+    </li>
+  </ul>
 </header>
