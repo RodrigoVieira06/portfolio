@@ -22,9 +22,6 @@ module.exports = {
         'secundaryDark': '#000505',
         'backgroundDark': '#000505'
       },
-      fontFamily: {
-        'lato': ['Lato', 'sans-serif']
-      }
     },
   },
   plugins: [],
