@@ -22,6 +22,9 @@ module.exports = {
         'secundaryDark': '#000505',
         'backgroundDark': '#000505'
       },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif']
+      }
     },
   },
   plugins: [],
