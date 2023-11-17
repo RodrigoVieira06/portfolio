@@ -1,24 +1,24 @@
-<header class="py-5 px-[10%] gap-3 flex flex-col justify-between items-center md:flex-row md:gap-[100px]">
-  <a class="cursor-pointer" [routerLink]="['/home']"> RODRIGO LIMA </a>
-  <ul class="flex flex-row gap-5">
-    <li class="cursor-pointer hover:text-primaryLight duration-500" routerLinkActive="active">
+<header class="main-header">
+  <a [routerLink]="['/home']"> RODRIGO LIMA </a>
+  <ul class="menu-list">
+    <li routerLinkActive="active">
       <a [routerLink]="['/about']">sobre</a>
     </li>
-    <li class="cursor-pointer hover:text-primaryLight duration-500" routerLinkActive="active">
-      projetos
+    <li routerLinkActive="active">
+      <a href="#">projetos</a>
     </li>
-    <li class="cursor-pointer hover:text-primaryLight duration-500" routerLinkActive="active">
-      contato
+    <li routerLinkActive="active">
+      <a href="#">contato</a>
     </li>
   </ul>
-  <ul class="flex gap-8">
-    <li class="cursor-pointer hover:text-primaryLight duration-500">
+  <ul class="menu-list">
+    <li>
       <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
     </li>
-    <li class="cursor-pointer hover:text-primaryLight duration-500">
+    <li>
       <a href="{{githubLink}}" target="_blank"><fa-icon [icon]="['fab', 'github']" size="xl"></fa-icon></a>
     </li>
-    <li class="cursor-pointer hover:text-primaryLight duration-500">
+    <li>
       <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
     </li>
   </ul>
