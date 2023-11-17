@@ -1,5 +1,5 @@
-<header class="p-5 gap-3 flex flex-col justify-center items-center md:flex-row md:gap-[100px]">
-  <a class="cursor-pointer" [routerLink]="['/home']"> RODRIGO VIEIRA </a>
+<header class="py-5 px-[10%] gap-3 flex flex-col justify-between items-center md:flex-row md:gap-[100px]">
+  <a class="cursor-pointer" [routerLink]="['/home']"> RODRIGO LIMA </a>
   <ul class="flex flex-row gap-5">
     <li class="cursor-pointer hover:text-primaryLight duration-500" routerLinkActive="active">
       <a [routerLink]="['/about']">sobre</a>
@@ -13,13 +13,13 @@
   </ul>
   <ul class="flex gap-8">
     <li class="cursor-pointer hover:text-primaryLight duration-500">
-      <fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon>
+      <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
     </li>
     <li class="cursor-pointer hover:text-primaryLight duration-500">
-      <fa-icon [icon]="['fab', 'github']" size="xl"></fa-icon>
+      <a href="{{githubLink}}" target="_blank"><fa-icon [icon]="['fab', 'github']" size="xl"></fa-icon></a>
     </li>
     <li class="cursor-pointer hover:text-primaryLight duration-500">
-      <fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon>
+      <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
     </li>
   </ul>
 </header>
