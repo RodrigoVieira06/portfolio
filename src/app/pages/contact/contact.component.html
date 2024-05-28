@@ -1,1 +1,22 @@
-<p>contact works!</p>
+<main>
+  <h1>Entre em contato comigo</h1>
+  <section>
+    <form>
+      <label>Nome</label>
+      <input placeholder="Informe..." />
+      <label>E-mail</label>
+      <input placeholder="Informe..." />
+      <label>Mensagem</label>
+      <textarea placeholder="Escreva..."></textarea>
+    </form>
+    <p>Ou entre em contato através de alguma das redes sociais</p>
+    <ul class="menu-list">
+      <li>
+        <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
+      </li>
+      <li>
+        <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
+      </li>
+    </ul>
+  </section>
+</main>
