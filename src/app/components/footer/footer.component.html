@@ -1,14 +1,17 @@
 <footer class="main-footer">
-  <p>© 2023 Rodrigo Vieira Lima</p>
+  <p>© 2024 Rodrigo Vieira Lima</p>
   <ul class="menu-list">
     <li>
-      <a href="#">sobre</a>
+      <a [routerLink]="['/home']">início</a>
     </li>
     <li>
-      <a href="#">projetos</a>
+      <a [routerLink]="['/about']">sobre</a>
     </li>
     <li>
-      <a href="#">contato</a>
+      <a [routerLink]="['/projects']">projetos</a>
+    </li>
+    <li>
+      <a [routerLink]="['/contact']">contato</a>
     </li>
   </ul>
 </footer>

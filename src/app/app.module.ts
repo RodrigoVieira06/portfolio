@@ -11,6 +11,8 @@ import { HomeModule } from './modules/home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutModule } from './modules/about/about.module';
 import { DividerComponent } from './components/divider/divider.component';
+import { ProjectsModule } from './modules/projects/projects.module';
+import { ContactModule } from './modules/contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { DividerComponent } from './components/divider/divider.component';
     FontAwesomeModule,
     HomeModule,
     AboutModule,
+    ProjectsModule,
+    ContactModule,
     BrowserAnimationsModule
   ],
   providers: [],
