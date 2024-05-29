@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { DividerComponent } from './shared/components/divider/divider.component';
+import { AlertComponent } from './shared/components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DividerComponent } from './shared/components/divider/divider.component'
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
