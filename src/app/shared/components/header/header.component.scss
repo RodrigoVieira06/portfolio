@@ -1,6 +1,5 @@
 .main-header {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-block: 15px;
 
   justify-content: space-between;
   align-items: center;
@@ -12,6 +11,17 @@
   @media (min-width: 960px) {
     flex-direction: row;
     gap: 100px;
+  }
+}
+
+.main-logo {
+  width: 150px;
+  margin-left: 15px;
+  transition: filter 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(70%);
   }
 }
 
