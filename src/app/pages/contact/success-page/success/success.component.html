@@ -1,0 +1,21 @@
+<main class="main-contact main-padding">
+  <section>
+    <article class="title-container">
+      <h1 class="title-container__title">Email enviado com sucesso!</h1>
+    </article>
+    <article class="body-success">
+      <fa-icon class="body-success__check-icon" [icon]="['far', 'circle-check']"></fa-icon>
+      <p class="body-success__description">Mensagem recebida. Em breve entrarei em contato. 😉</p>
+      <app-divider />
+      <p>Entre em contato através das redes abaixo</p>
+      <ul class="body-success__menu-list">
+        <li>
+          <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
+        </li>
+        <li>
+          <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>

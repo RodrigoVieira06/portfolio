@@ -14,6 +14,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { DividerComponent } from './shared/components/divider/divider.component';
 import { AlertComponent } from './shared/components/alert/alert.component';
+import { SuccessComponent } from './pages/contact/success-page/success/success.component';
+import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { AlertComponent } from './shared/components/alert/alert.component';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    AlertComponent
+    AlertComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ export class AppModule {
     library.addIcons(
       faLinkedin,
       faGithub,
-      faWhatsapp
+      faWhatsapp,
+      faCircleCheck
     );
   }
 }

@@ -1,22 +1,54 @@
-<main class="main-padding">
-  <h1>Entre em contato comigo</h1>
+<main class="main-contact main-padding">
   <section>
-    <form>
-      <label>Nome</label>
-      <input placeholder="Informe..." />
-      <label>E-mail</label>
-      <input placeholder="Informe..." />
-      <label>Mensagem</label>
-      <textarea placeholder="Escreva..."></textarea>
-    </form>
-    <p>Ou entre em contato através de alguma das redes sociais</p>
-    <ul class="menu-list">
-      <li>
-        <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
-      </li>
-      <li>
-        <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
-      </li>
-    </ul>
+    <article class="title-container">
+      <h1 class="title-container__title">Contato</h1>
+      <p class="title-container__main-description">
+        Entre em contato comigo! Preencha os campos abaixo e envie um e-mail diretamente para mim.
+      </p>
+    </article>
+    <article class="body-contact">
+      <form class="body-contact__form" action="https://api.staticforms.xyz/submit" method="post">
+        <div class="body-contact__form--row">
+          <div class="field">
+            <label>Nome *</label>
+            <input type="text" name="nome" placeholder="Informe..." required />
+          </div>
+        </div>
+        <div class="body-contact__form--row">
+          <div class="field">
+            <label>E-mail *</label>
+            <input type="email" name="email" placeholder="Informe..." required />
+          </div>
+        </div>
+        <div class="body-contact__form--row">
+          <div class="field">
+            <label>Assunto *</label>
+            <input type="text" name="subject" placeholder="Informe..." required />
+          </div>
+        </div>
+        <div class="body-contact__form--row">
+          <div class="field">
+            <label>Mensagem *</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Escreva..."></textarea>
+          </div>
+        </div>
+        <button type="submit">ENVIAR</button>
+
+        <input type="hidden" name="accessKey" value="b90294d6-d1f8-425b-bf1f-380cc67f0046">
+        <input type="text" name="honeypot" style="display: none;">
+        <input type="hidden" name="redirectTo" value="http://localhost:4200/contact/success">
+      </form>
+      <section class="body-contact__social-media">
+        <p>Ou entre em contato através de alguma das redes sociais</p>
+        <ul class="body-contact__social-media--menu-list">
+          <li>
+            <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
+          </li>
+          <li>
+            <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
+          </li>
+        </ul>
+      </section>
+    </article>
   </section>
 </main>

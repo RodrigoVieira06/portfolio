@@ -1,0 +1,54 @@
+@import '../../../../../assets/styles/colors';
+
+.main-contact {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__main-description {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.body-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 15px;
+  padding: 20px;
+  margin-inline: 25%;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-size: 20px;
+
+  &__check-icon {
+    font-size: 70px;
+  }
+
+  &__description {
+    margin: 15px;
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+}

@@ -1,0 +1,145 @@
+@import '../../../assets/styles/colors';
+
+.main-contact {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__main-description {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.body-contact {
+  display: flex;
+  flex-direction: column;
+  margin-block: 15px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-size: 22px;
+
+  @media (min-width: 880px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &--row {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      font-weight: 700;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      width: 50vw;
+      height: 40px;
+      border: 0;
+      background-color: $background-light;
+      margin-block: 10px;
+      font-size: 20px;
+      padding-inline: 15px;
+      font-family: lato;
+      transition: all 0.5s;
+
+      &:focus {
+        border-radius: 10px;
+      }
+
+      @media (min-width: 880px) {
+        width: 30vw;
+      }
+    }
+
+    textarea {
+      width: 50vw;
+      height: 100px;
+      border: 0;
+      background-color: $background-light;
+      margin-block: 10px;
+      font-size: 20px;
+      padding-inline: 15px;
+      font-family: lato;
+      transition: all 0.5s;
+
+      @media (min-width: 880px) {
+        width: 30vw;
+      }
+
+      &:focus {
+        border-radius: 10px;
+      }
+    }
+
+  }
+
+  &__social-media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-inline: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &--menu-list {
+      display: flex;
+      gap: 15px;
+    }
+
+    p {
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  button {
+    width: 55vw;
+    margin-block: 10px;
+    font-size: 20px;
+    padding-inline: 15px;
+    font-family: lato;
+    background-color: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @media (min-width: 880px) {
+      width: 32vw;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
