@@ -16,6 +16,7 @@ import { DividerComponent } from './shared/components/divider/divider.component'
 import { AlertComponent } from './shared/components/alert/alert.component';
 import { SuccessComponent } from './pages/contact/success-page/success/success.component';
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ export class AppModule {
       faLinkedin,
       faGithub,
       faWhatsapp,
-      faCircleCheck
+      faCircleCheck,
+      faArrowUpRightFromSquare
     );
   }
 }

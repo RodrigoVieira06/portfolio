@@ -47,7 +47,7 @@
   display: grid;
   justify-content: space-between;
   gap: 10px;
-  height: 500px;
+  height: 530px;
   background-color: white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -115,7 +115,10 @@
     }
   }
 
-  &__see-more {
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-bottom: 20px;
     margin-inline: 15px;
     font-size: 18px;
@@ -126,4 +129,8 @@
       cursor: pointer;
     }
   }
+}
+
+.shared-icon {
+  margin-left: 5px;
 }
