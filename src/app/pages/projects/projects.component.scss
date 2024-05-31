@@ -23,11 +23,19 @@
 
 .body-projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 25px;
 
   margin-top: 15px;
   padding: 20px;
+
+  @media (min-width: 820px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1140px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .card-container {
@@ -57,8 +65,10 @@
   }
 
   &__description {
+    padding: 10px;
     text-align: justify;
     margin-inline: 15px;
+    overflow-y: auto;
   }
 
   &__see-more {

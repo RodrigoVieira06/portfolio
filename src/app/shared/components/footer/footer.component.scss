@@ -16,10 +16,14 @@
 .menu-list {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   padding: 0;
+  margin: 10px;
 
   @media (min-width: 640px) {
     flex-direction: row;
+    gap: 2rem;
   }
 }
