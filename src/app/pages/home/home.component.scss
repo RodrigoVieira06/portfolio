@@ -20,7 +20,7 @@
   gap: 5px;
   text-align: center;
   font-size: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .frontend-developer-container {
@@ -28,7 +28,6 @@
   flex-direction: column;
   text-align: center;
   font-size: 30px;
-  gap: 1.5rem;
   justify-content: center;
   align-items: center;
 
@@ -56,14 +55,16 @@
     font-size: 80px;
   }
 
+  &__title {
+    margin-bottom: 25px;
+  }
+
   &__technologies {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 1.25rem;
-    gap: 1.5rem;
 
     .popup {
       position: absolute;
@@ -95,7 +96,7 @@
       gap: 25px;
 
       img {
-        width: 50px;
+        width: 40px;
         transition: transform 0.2s ease-in-out;
 
         &:hover {
@@ -103,19 +104,19 @@
         }
 
         @media (min-width: 640px) {
-          width: 60px;
+          width: 45px;
         }
 
         @media (min-width: 768px) {
-          width: 70px;
+          width: 50px;
         }
 
         @media (min-width: 1024px) {
-          width: 80px;
+          width: 55px;
         }
 
         @media (min-width: 1280px) {
-          width: 90px;
+          width: 60px;
         }
       }
     }
@@ -125,7 +126,8 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 25px;
+      column-gap: 25px;
+      row-gap: 5px;
 
       img {
         width: 25px;
@@ -144,11 +146,11 @@
         }
 
         @media (min-width: 1024px) {
-          width: 45px;
+          width: 35px;
         }
 
         @media (min-width: 1280px) {
-          width: 50px;
+          width: 40px;
         }
       }
     }
