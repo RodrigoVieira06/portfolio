@@ -1,4 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, inject } from '@angular/core';
+import { TechnologiesService } from 'src/app/shared/services/technologies/technologies.service';
+import { ITechnology } from 'src/app/shared/types/technology.type';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,16 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class HomeComponent {
   @ViewChild('popup', { static: true }) popup!: ElementRef<HTMLDivElement>;
+
+  public primaryTechnologies: ITechnology[] = [];
+  public secundaryTechnologies: ITechnology[] = [];
+
+  private technologiesService: TechnologiesService = inject(TechnologiesService);
+
+  constructor() {
+    this.primaryTechnologies = this.technologiesService.getTechnologies('primary');
+    this.secundaryTechnologies = this.technologiesService.getTechnologies('secundary');
+  }
 
   onMouseMove(event: MouseEvent): void {
     const imageContainer = event.currentTarget as HTMLElement;

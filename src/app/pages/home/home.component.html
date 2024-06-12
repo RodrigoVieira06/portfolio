@@ -11,64 +11,24 @@
         FRONTEND
       </h1>
 
-      <div class="frontend-developer-container__technologies">
+      <section class="frontend-developer-container__technologies">
         <div class="primary-logo">
-          <div class="logo">
-            <img src="assets/images/logos/angularLogo.png" alt="Angular">
-            <div class="popup">Angular</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/reactLogo.png" alt="React">
-            <div class="popup">React</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/nextJSLogo.png" alt="NextJS">
-            <div class="popup">NextJs</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/typescriptLogo.png" alt="Typescript">
-            <div class="popup">Typescript</div>
+          <div *ngFor="let logo of primaryTechnologies">
+            <div class="logo">
+              <img [src]="logo.path" [alt]="logo.name">
+              <div class="popup">{{logo.name}}</div>
+            </div>
           </div>
         </div>
         <div class="secundary-logo">
-          <div class="logo">
-            <img src="assets/images/logos/javascriptLogo.png" alt="Javascript">
-            <div class="popup">Javascript</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/sassLogo.png" alt="Sass">
-            <div class="popup">Sass</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/bootstrapLogo.png" alt="Bootstrap">
-            <div class="popup">Bootstrap</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/tailwindLogo.png" alt="Tailwind">
-            <div class="popup">Tailwind</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/gitLogo.png" alt="Git">
-            <div class="popup">Git</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/githubLogo.png" alt="Github">
-            <div class="popup">Github</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/webpackLogo.png" alt="Webpack">
-            <div class="popup">Webpack</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/flutterLogo.png" alt="Flutter">
-            <div class="popup">Flutter</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/dartLogo.png" alt="Dart">
-            <div class="popup">Dart</div>
+          <div *ngFor="let logo of secundaryTechnologies">
+            <div class="logo">
+              <img [src]="logo.path" [alt]="logo.name">
+              <div class="popup">{{logo.name}}</div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </article>
   </section>
   <section class="body-container">
