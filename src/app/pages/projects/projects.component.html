@@ -7,66 +7,9 @@
       </p>
     </article>
     <article class="body-projects">
-      <main class="card-container">
-        <img class="card-container__image" src="assets/images/projects/lipcat.png" alt="LIPCAT">
-        <span class="card-container__title">LIPCAT</span>
-        <p class="card-container__description">
-          Um sistema de uma laboratório de química da UFRJ que contém uma landing page e um sistema intranet, que
-          possibilita alunos e professores a gerenciarem o conteúdo presente nas telas visíveis para o publico geral,
-          além de controle disponibilidade de conteúdo interno.
-        </p>
-        <section class="card-container__technologies">
-          <div class="logo">
-            <img src="assets/images/logos/reactLogo.png" alt="React">
-            <div class="popup">React</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/nextJSLogo.png" alt="NextJS">
-            <div class="popup">NextJS</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/typescriptLogo.png" alt="Typescript">
-            <div class="popup">Typescript</div>
-          </div>
-        </section>
-        <section class="card-container__links">
-          <a href="https://lipcat.com.br/pt" target="_blank">
-            Link do site
-            <fa-icon class="shared-icon" [icon]="['fas', 'arrow-up-right-from-square']"></fa-icon>
-          </a>
-        </section>
-      </main>
-      <main class="card-container">
-        <img class="card-container__image" src="assets/images/projects/meudinheiro.png" alt="Meu dinheiro">
-        <span class="card-container__title">Meu dinheiro</span>
-        <p class="card-container__description">
-          Um aplicativo mobile que tem como objetivo auxiliar o gerenciamento financeiro pessoal, possibilitando o
-          cadastro de entrada e saída de dinheiro, personalização de categorias, adição de cartões e visualização de
-          gráficos.
-        </p>
-        <section class="card-container__technologies">
-          <div class="logo">
-            <img src="assets/images/logos/flutterLogo.png" alt="Flutter">
-            <div class="popup">Flutter</div>
-          </div>
-          <div class="logo">
-            <img src="assets/images/logos/dartLogo.png" alt="Dart">
-            <div class="popup">Dart</div>
-          </div>
-        </section>
-        <section class="card-container__links">
-          <a class="" href="https://github.com/RodrigoVieira06/projeto-controle-financeiro"
-            target="_blank">
-            Link do projeto
-            <fa-icon class="shared-icon" [icon]="['fas', 'arrow-up-right-from-square']"></fa-icon>
-          </a>
-          <a class=""
-            href="https://docs.google.com/document/d/156lhCn88hBK34-2mN0VHaaMuc3f1FoCh/" target="_blank">
-            Link da documentação
-            <fa-icon class="shared-icon" [icon]="['fas', 'arrow-up-right-from-square']"></fa-icon>
-          </a>
-        </section>
-      </main>
+      <section *ngFor="let entity of entities">
+        <app-project-card [entity]="entity" />
+      </section>
     </article>
   </section>
 </main>

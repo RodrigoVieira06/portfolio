@@ -60,8 +60,6 @@ export class TechnologiesService {
     },
   ];
 
-  constructor() { }
-
   public getTechnologies(level: 'primary' | 'secundary'): ITechnology[] {
     const primaryTechnologiesData: ITechnology[] = this.primaryTechnologies;
 
