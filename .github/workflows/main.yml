@@ -4,17 +4,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Install dependencies
-      run: npm ci
-    - name: Replace environment variables
-      run: |
-        sed -i "s#EMAILJS_SERVICEID#${{ secrets.EMAILJS_SERVICEID }}#g" src/environments/environment.ts
-        sed -i "s#EMAILJS_TEMPLATEID#${{ secrets.EMAILJS_TEMPLATEID }}#g" src/environments/environment.ts
-        sed -i "s#EMAILJS_USERID#${{ secrets.EMAILJS_USERID }}#g" src/environments/environment.ts
-        sed -i "s#STATICFORMS_ACCESSKEY#${{ secrets.STATICFORMS_ACCESSKEY }}#g" src/environments/environment.ts
-        sed -i "s#STATICFORMS_SUBMIT#${{ secrets.STATICFORMS_SUBMIT }}#g" src/environments/environment.ts
-        sed -i "s#STATICFORMS_URL#${{ secrets.STATICFORMS_URL }}#g" src/environments/environment.ts
-    - name: Build
-      run: npm run build -- --prod
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Replace environment variables
+        run: |
+          sed -i "s#EMAILJS_SERVICEID#${{ secrets.EMAILJS_SERVICEID }}#g" src/environments/environment.ts
+          sed -i "s#EMAILJS_TEMPLATEID#${{ secrets.EMAILJS_TEMPLATEID }}#g" src/environments/environment.ts
+          sed -i "s#EMAILJS_USERID#${{ secrets.EMAILJS_USERID }}#g" src/environments/environment.ts
+          sed -i "s#STATICFORMS_ACCESSKEY#${{ secrets.STATICFORMS_ACCESSKEY }}#g" src/environments/environment.ts
+          sed -i "s#STATICFORMS_SUBMIT#${{ secrets.STATICFORMS_SUBMIT }}#g" src/environments/environment.ts
+          sed -i "s#STATICFORMS_URL#${{ secrets.STATICFORMS_URL }}#g" src/environments/environment.ts
+      - name: Build
+        run: npm run build -- --configuration production
