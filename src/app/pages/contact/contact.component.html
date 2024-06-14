@@ -11,33 +11,34 @@
         <div class="body-contact__form--row">
           <div class="field">
             <label>Nome *</label>
-            <input id="name" type="text" formControlName="name" placeholder="Informe..." required />
+            <input id="name" type="text" formControlName="name" placeholder="Informe..." [readonly]="isLoading"
+              required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
             <label>E-mail *</label>
-            <input id="email" type="email" formControlName="email" placeholder="Informe..." required />
+            <input id="email" type="email" formControlName="email" placeholder="Informe..." [readonly]="isLoading"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
             <label>Assunto *</label>
-            <input id="subject" type="text" formControlName="subject" placeholder="Informe..." required />
+            <input id="subject" type="text" formControlName="subject" placeholder="Informe..." [readonly]="isLoading"
+              required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
             <label>Mensagem *</label>
             <textarea id="message" formControlName="message" cols="30" rows="10" placeholder="Escreva..."
-              required></textarea>
+              [readonly]="isLoading" required></textarea>
           </div>
         </div>
         <input type="hidden" [value]="staticFormsKey" formControlName="accessKey">
-        <!-- <input type="text" name="honeypot" style="display: none;"> -->
-        <!-- <input type="hidden" name="redirectTo" value="http://rodrigovieira.vercel.app/contact/success"> -->
 
-        <button type="submit" [disabled]="!contactForm.valid">ENVIAR</button>
+        <button type="submit" [disabled]="!contactForm.valid || isLoading">ENVIAR</button>
 
       </form>
       <section class="body-contact__social-media">
