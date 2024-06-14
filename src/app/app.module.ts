@@ -13,7 +13,7 @@ import { ContactModule } from './pages/contact/contact.module';
 import { HomeModule } from './pages/home/home.module';
 import { ProjectsModule } from './pages/projects/projects.module';
 import { SharedModule } from './shared/shared.module';
-import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { RouterModule } from '@angular/router';
     ContactModule,
     HomeModule,
     ProjectsModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   exports: [
   ],

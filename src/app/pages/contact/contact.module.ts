@@ -4,6 +4,7 @@ import { ContactComponent } from './contact.component';
 import { SuccessComponent } from './success-page/success.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     FontAwesomeModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
   ]
 })
 export class ContactModule { }

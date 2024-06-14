@@ -7,36 +7,38 @@
       </p>
     </article>
     <article class="body-contact">
-      <form class="body-contact__form" action="https://api.staticforms.xyz/submit" method="post">
+      <form class="body-contact__form" [formGroup]="contactForm" (ngSubmit)="sendEmail()">
         <div class="body-contact__form--row">
           <div class="field">
             <label>Nome *</label>
-            <input type="text" name="nome" placeholder="Informe..." required />
+            <input id="name" type="text" formControlName="name" placeholder="Informe..." required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
             <label>E-mail *</label>
-            <input type="email" name="email" placeholder="Informe..." required />
+            <input id="email" type="email" formControlName="email" placeholder="Informe..." required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
             <label>Assunto *</label>
-            <input type="text" name="subject" placeholder="Informe..." required />
+            <input id="subject" type="text" formControlName="subject" placeholder="Informe..." required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
             <label>Mensagem *</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Escreva..."></textarea>
+            <textarea id="message" formControlName="message" cols="30" rows="10" placeholder="Escreva..."
+              required></textarea>
           </div>
         </div>
-        <button type="submit">ENVIAR</button>
+        <input type="hidden" [value]="staticFormsKey" formControlName="accessKey">
+        <!-- <input type="text" name="honeypot" style="display: none;"> -->
+        <!-- <input type="hidden" name="redirectTo" value="http://rodrigovieira.vercel.app/contact/success"> -->
 
-        <input type="hidden" name="accessKey" value="b90294d6-d1f8-425b-bf1f-380cc67f0046">
-        <input type="text" name="honeypot" style="display: none;">
-        <input type="hidden" name="redirectTo" value="http://rodrigovieira.vercel.app/contact/success">
+        <button type="submit" [disabled]="!contactForm.valid">ENVIAR</button>
+
       </form>
       <section class="body-contact__social-media">
         <p>Ou entre em contato através de alguma das redes sociais</p>
