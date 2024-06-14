@@ -10,11 +10,11 @@ jobs:
         run: npm ci
       - name: Replace environment variables
         run: |
-          sed -i "s#EMAILJS_SERVICEID#${{ secrets.EMAILJS_SERVICEID }}#g" src/environments/environment.ts
-          sed -i "s#EMAILJS_TEMPLATEID#${{ secrets.EMAILJS_TEMPLATEID }}#g" src/environments/environment.ts
-          sed -i "s#EMAILJS_USERID#${{ secrets.EMAILJS_USERID }}#g" src/environments/environment.ts
-          sed -i "s#STATICFORMS_ACCESSKEY#${{ secrets.STATICFORMS_ACCESSKEY }}#g" src/environments/environment.ts
-          sed -i "s#STATICFORMS_SUBMIT#${{ secrets.STATICFORMS_SUBMIT }}#g" src/environments/environment.ts
-          sed -i "s#STATICFORMS_URL#${{ secrets.STATICFORMS_URL }}#g" src/environments/environment.ts
+          sed -i "s#url: 'STATICFORMS_URL'#url: '${{ secrets.STATICFORMS_URL }}'#g" src/environments/environment.ts
+          sed -i "s#accessKey: 'STATICFORMS_ACCESSKEY'#accessKey: '${{ secrets.STATICFORMS_ACCESSKEY }}'#g" src/environments/environment.ts
+          sed -i "s#submit: 'STATICFORMS_SUBMIT'#submit: '${{ secrets.STATICFORMS_SUBMIT }}'#g" src/environments/environment.ts
+          sed -i "s#serviceId: 'EMAILJS_SERVICEID'#serviceId: '${{ secrets.EMAILJS_SERVICEID }}'#g" src/environments/environment.ts
+          sed -i "s#templateId: 'EMAILJS_TEMPLATEID'#templateId: '${{ secrets.EMAILJS_TEMPLATEID }}'#g" src/environments/environment.ts
+          sed -i "s#userId: 'EMAILJS_USERID'#userId: '${{ secrets.EMAILJS_USERID }}'#g" src/environments/environment.ts
       - name: Build
         run: npm run build -- --configuration production
