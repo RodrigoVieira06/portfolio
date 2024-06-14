@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { IContact } from '../../types/contact.type';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { environment } from 'src/environments/environment';
 
 
