@@ -29,6 +29,11 @@ export class ContactService {
   constructor(private http: HttpClient) { }
 
   public sendEmail(form: IContact): Observable<IContact> {
+    console.log(this.emailjsParams.serviceId);
+    console.log(this.emailjsParams.templateId);
+    console.log(this.emailjsParams.defaultMessage);
+    console.log(this.emailjsParams.userId);
+
     const staticFormsSubmitEndpoint = this.staticFormsURL + this.staticFormsSubmit;
     return this.http.post<IContact>(staticFormsSubmitEndpoint, form);
   }
@@ -40,11 +45,6 @@ export class ContactService {
       message: this.emailjsParams.defaultMessage,
       reply_to: contact.email
     };
-
-    console.log(this.emailjsParams.serviceId);
-    console.log(this.emailjsParams.templateId);
-    console.log(templateParams);
-    console.log(this.emailjsParams.userId);
 
     emailjs.send(
       this.emailjsParams.serviceId,
