@@ -18,3 +18,5 @@ jobs:
           sed -i "s#userId: 'EMAILJS_USERID'#userId: '${{ secrets.EMAILJS_USERID }}'#g" src/environments/environment.ts
       - name: Build
         run: npm run build -- --configuration production
+      - name: Deploy to Vercel
+        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
