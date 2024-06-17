@@ -160,21 +160,37 @@ table {
   --primary-color: #165a48;
   --secundary-color: #6B6B6B;
   --accent-color: #56DAB5;
-  --background-color: #f0f0f0;
+  --background-color: #F3F3F3;
   --contrast-color: #fff;
-  --popup-color: rgba(0, 0, 0, 0.7);
+
+  --block-color: #d6d6d6c5;
+  --text-block-color: #165a4873;
 
   --danger-color: #DB162F;
   --warning-color: #FC814A;
+
+  --popup-color: rgba(0, 0, 0, 0.7);
+  --background-line-color: #E1E1E1;
 }
 
 :root .dark-theme {
-  --accent-color: #56DAB5;
+  --primary-color: #26a382;
+  --accent-color: #60f1c8;
   --background-color: #181818;
-  --contrast-color: #000;
+  --contrast-color: #131313;
+
   --popup-color: rgba(255, 255, 255, 0.7);
+  --background-line-color: #2c2c2c;
 }
 
 *:not(.no-theme-transition) {
   transition: background-color 0.3s, color 0.3s;
+}
+
+.background-page {
+  --color: var(--background-line-color);
+  background-color: var(--background-color);
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
 }

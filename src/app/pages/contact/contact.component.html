@@ -1,4 +1,4 @@
-<main class="main-contact main-padding">
+<main class="main-contact main-padding background-page">
   <section>
     <article class="title-container">
       <h1 class="title-container__title">Contato</h1>
@@ -38,17 +38,25 @@
         </div>
         <input type="hidden" [value]="staticFormsKey" formControlName="accessKey">
 
-        <button type="submit" [disabled]="!contactForm.valid || isLoading">ENVIAR</button>
+        <button type="submit" [disabled]="!contactForm.valid || isLoading">Enviar <fa-icon class="no-theme-transition"
+            [icon]="['fas', 'paper-plane']"></fa-icon>
+        </button>
+
+        <!-- <div class="textInputWrapper">
+          <input placeholder="Type Here" type="text" class="textInput">
+        </div> -->
 
       </form>
       <section class="body-contact__social-media">
         <p>Ou entre em contato através de alguma das redes sociais</p>
         <ul class="body-contact__social-media--menu-list">
           <li>
-            <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
+            <a href="{{linkedinLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'linkedin']"
+                size="xl"></fa-icon></a>
           </li>
           <li>
-            <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
+            <a href="{{whastappLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'whatsapp']"
+                size="xl"></fa-icon></a>
           </li>
         </ul>
       </section>
