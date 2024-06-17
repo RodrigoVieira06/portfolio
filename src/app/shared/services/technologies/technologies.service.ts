@@ -23,6 +23,10 @@ export class TechnologiesService {
       name: 'Typescript',
       path: 'assets/images/logos/typescriptLogo.png'
     },
+    {
+      name: 'Flutter',
+      path: 'assets/images/logos/flutterLogo.png'
+    }
   ];
 
   private secundaryTechnologies: ITechnology[] = [
@@ -47,12 +51,12 @@ export class TechnologiesService {
       path: 'assets/images/logos/gitLogo.png'
     },
     {
-      name: 'Webpack',
-      path: 'assets/images/logos/webpackLogo.png'
+      name: 'Github',
+      path: 'assets/images/logos/githubLogo.png'
     },
     {
-      name: 'Flutter',
-      path: 'assets/images/logos/flutterLogo.png'
+      name: 'Webpack',
+      path: 'assets/images/logos/webpackLogo.png'
     },
     {
       name: 'Dart',

@@ -1,13 +1,10 @@
-@import 'assets/styles/colors';
-
 a {
   text-decoration: none;
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 a:hover {
-  color: $primary-color-light;
-  transition: color 500ms ease;
+  color: var(--accent-color);
 }
 
 ul,
@@ -108,8 +105,9 @@ video {
 html,
 body {
   height: 100%;
-  color: $primary-color;
+  color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
+  background-color: var(--contrast-color);
 }
 
 article,
@@ -156,4 +154,27 @@ table {
 .main-padding {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+:root {
+  --primary-color: #165a48;
+  --secundary-color: #6B6B6B;
+  --accent-color: #56DAB5;
+  --background-color: #f0f0f0;
+  --contrast-color: #fff;
+  --popup-color: rgba(0, 0, 0, 0.7);
+
+  --danger-color: #DB162F;
+  --warning-color: #FC814A;
+}
+
+:root .dark-theme {
+  --accent-color: #56DAB5;
+  --background-color: #181818;
+  --contrast-color: #000;
+  --popup-color: rgba(255, 255, 255, 0.7);
+}
+
+*:not(.no-theme-transition) {
+  transition: background-color 0.3s, color 0.3s;
 }

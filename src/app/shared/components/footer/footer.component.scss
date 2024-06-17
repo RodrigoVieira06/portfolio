@@ -1,4 +1,6 @@
 .main-footer {
+  background-color: var(--contrast-color);
+  height: max-content;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   display: flex;
@@ -29,5 +31,5 @@
 }
 
 .active {
-  color: #56DAB5;
+  color: var(--accent-color);
 }

@@ -1,6 +1,6 @@
 .alert-container {
-  background-color: rgb(223, 70, 70);
-  color: white;
+  background-color: var(--danger-color);
+  color: var(--contrast-color);
   padding: 20px;
   text-align: center;
   font-size: 16px;

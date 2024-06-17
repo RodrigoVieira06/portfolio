@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { IconName } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  public icon: IconName = 'sun';
 
   public pathName: string = '';
   public linkedinLink: string = 'https://www.linkedin.com/in/rodrigovl12/';
@@ -15,5 +17,17 @@ export class HeaderComponent {
 
   constructor(private router: Router) {
     this.pathName = this.router.url;
+  }
+
+  public toggleStylesTheme(): void {
+    const theme = document.body.classList.toggle('dark-theme');
+
+    if (theme) {
+      this.icon = 'moon';
+      return;
+    }
+
+    this.icon = 'sun';
+    return;
   }
 }

@@ -6,7 +6,7 @@
     <li>
       <a [routerLink]="['/home']" routerLinkActive="active">início</a>
     </li>
-    <li >
+    <li>
       <a [routerLink]="['/about']" routerLinkActive="active">sobre</a>
     </li>
     <li>
@@ -18,13 +18,23 @@
   </ul>
   <ul class="menu-list">
     <li>
-      <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']" size="xl"></fa-icon></a>
+      <a class="no-theme-transition" href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"
+          size="xl"></fa-icon></a>
     </li>
     <li>
-      <a href="{{githubLink}}" target="_blank"><fa-icon [icon]="['fab', 'github']" size="xl"></fa-icon></a>
+      <a class="no-theme-transition" href="{{githubLink}}" target="_blank"><fa-icon [icon]="['fab', 'github']"
+          size="xl"></fa-icon></a>
     </li>
     <li>
-      <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']" size="xl"></fa-icon></a>
+      <a class="no-theme-transition" href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']"
+          size="xl"></fa-icon></a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a class="no-theme-transition" (click)="toggleStylesTheme()">
+        <fa-icon class="icon-theme" [icon]="['far', icon ]"></fa-icon>
+      </a>
     </li>
   </ul>
 </header>

@@ -1,4 +1,5 @@
 .main-header {
+  background-color: var(--contrast-color);
   padding-block: 15px;
 
   justify-content: space-between;
@@ -37,5 +38,14 @@
 }
 
 .active {
-  color: #56DAB5;
+  color: var(--accent-color);
+}
+
+.icon-theme {
+  font-size: 30px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faCircleCheck, faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { AboutModule } from './pages/about/about.module';
 import { ContactModule } from './pages/contact/contact.module';
@@ -43,7 +43,9 @@ export class AppModule {
       faGithub,
       faWhatsapp,
       faCircleCheck,
-      faArrowUpRightFromSquare
+      faArrowUpRightFromSquare,
+      faSun,
+      faMoon
     );
   }
 }

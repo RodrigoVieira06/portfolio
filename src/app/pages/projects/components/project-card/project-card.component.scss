@@ -3,7 +3,7 @@
   justify-content: space-between;
   gap: 10px;
   height: 530px;
-  background-color: white;
+  background-color: var(--contrast-color);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 
@@ -41,7 +41,7 @@
     .popup {
       position: absolute;
       background-color: rgba(0, 0, 0, 0.7);
-      color: white;
+      color: var(--contrast-color);
       padding: 5px 10px;
       border-radius: 5px;
       white-space: nowrap;
