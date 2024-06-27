@@ -67,7 +67,7 @@
     .popup {
       position: absolute;
       background-color: rgba(0, 0, 0, 0.7);
-      color: var(--contrast-color);
+      color: var(--main-theme-color);
       padding: 5px 10px;
       border-radius: 5px;
       white-space: nowrap;
@@ -157,7 +157,7 @@
 }
 
 .body-container {
-  background-color: var(--contrast-color);
+  background-color: var(--main-theme-color);
   padding: 20px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);

@@ -107,7 +107,7 @@ body {
   height: 100%;
   color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
-  background-color: var(--contrast-color);
+  background-color: var(--main-theme-color);
 }
 
 article,
@@ -157,30 +157,38 @@ table {
 }
 
 :root {
-  --primary-color: #165a48;
+  --primary-color: #165A48;
   --secundary-color: #6B6B6B;
   --accent-color: #56DAB5;
   --background-color: #F3F3F3;
-  --contrast-color: #fff;
+  --main-theme-color: #FFFFFF;
+  --contrast-color: #000000;
 
-  --block-color: #d6d6d6c5;
-  --text-block-color: #165a4873;
+  --block-color: #D6D6D6C5;
+  --text-block-color: #165A4873;
 
   --danger-color: #DB162F;
   --warning-color: #FC814A;
 
   --popup-color: rgba(0, 0, 0, 0.7);
   --background-line-color: #E1E1E1;
+
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-danger-color: rgba(255, 2, 2, 0.3);
 }
 
 :root .dark-theme {
-  --primary-color: #26a382;
-  --accent-color: #60f1c8;
+  --primary-color: #26A382;
+  --accent-color: #60f1C8;
   --background-color: #181818;
-  --contrast-color: #131313;
+  --main-theme-color: #131313;
+  --contrast-color: #FFFFFF;
 
   --popup-color: rgba(255, 255, 255, 0.7);
   --background-line-color: #2c2c2c;
+
+  --shadow-color: #26a38246;
+  --shadow-danger-color: rgba(255, 2, 2, 0.3);
 }
 
 *:not(.no-theme-transition) {

@@ -10,41 +10,34 @@
       <form class="body-contact__form" [formGroup]="contactForm" (ngSubmit)="sendEmail()">
         <div class="body-contact__form--row">
           <div class="field">
-            <label>Nome *</label>
-            <input id="name" type="text" formControlName="name" placeholder="Informe..." [readonly]="isLoading"
+            <!-- <label class="label-hidden" ngClass="">Nome</label> -->
+            <input id="name" class="input" type="text" formControlName="name" placeholder="Nome" [readonly]="isLoading"
               required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
-            <label>E-mail *</label>
-            <input id="email" type="email" formControlName="email" placeholder="Informe..." [readonly]="isLoading"
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+            <input id="email" class="input" type="email" formControlName="email" placeholder="Email"
+              [readonly]="isLoading" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
-            <label>Assunto *</label>
-            <input id="subject" type="text" formControlName="subject" placeholder="Informe..." [readonly]="isLoading"
-              required />
+            <input id="subject" class="input" type="text" formControlName="subject" placeholder="Assunto"
+              [readonly]="isLoading" required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
-            <label>Mensagem *</label>
-            <textarea id="message" formControlName="message" cols="30" rows="10" placeholder="Escreva..."
-              [readonly]="isLoading" required></textarea>
+            <textarea id="message" class="input" formControlName="message" cols="30" rows="10"
+              placeholder="Escreva seu email" [readonly]="isLoading" required></textarea>
           </div>
         </div>
         <input type="hidden" [value]="staticFormsKey" formControlName="accessKey">
 
-        <button type="submit" [disabled]="!contactForm.valid || isLoading">Enviar <fa-icon class="no-theme-transition"
-            [icon]="['fas', 'paper-plane']"></fa-icon>
+        <button type="submit" [disabled]="!contactForm.valid || isLoading">
+          Enviar <fa-icon class="no-theme-transition" [icon]="['fas', 'paper-plane']"></fa-icon>
         </button>
-
-        <!-- <div class="textInputWrapper">
-          <input placeholder="Type Here" type="text" class="textInput">
-        </div> -->
 
       </form>
       <section class="body-contact__social-media">
