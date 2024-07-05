@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IProject } from '../../types/project.type';
-import { map, Observable, tap } from 'rxjs';
+import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

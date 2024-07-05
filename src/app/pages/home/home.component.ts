@@ -1,26 +1,44 @@
-import { Component, ElementRef, ViewChild, inject } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { TechnologiesService } from 'src/app/shared/services/technologies/technologies.service';
-import { ITechnology } from 'src/app/shared/types/technology.type';
+import { ITechnology, ITechnologyLevels } from 'src/app/shared/types/technology.type';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('popup', { static: true }) popup!: ElementRef<HTMLDivElement>;
 
   public primaryTechnologies: ITechnology[] = [];
   public secundaryTechnologies: ITechnology[] = [];
 
-  private technologiesService: TechnologiesService = inject(TechnologiesService);
+  private subscriptions = new Subscription();
 
-  constructor() {
-    this.primaryTechnologies = this.technologiesService.getTechnologies('primary');
-    this.secundaryTechnologies = this.technologiesService.getTechnologies('secundary');
+  constructor(private technologiesService: TechnologiesService) { }
+
+  ngOnInit(): void {
+    this.getTechnologies();
   }
 
-  onMouseMove(event: MouseEvent): void {
+  ngOnDestroy(): void {
+    this.subscriptions.unsubscribe();
+  }
+
+  public getTechnologies() {
+    const subscription = this.technologiesService.getTechnologies()
+      .subscribe({
+        next: (technologies: ITechnologyLevels) => {
+          this.primaryTechnologies = technologies.primary;
+          this.secundaryTechnologies = technologies.secondary
+        }
+      });
+
+    this.subscriptions.add(subscription);
+  }
+
+  public onMouseMove(event: MouseEvent): void {
     const imageContainer = event.currentTarget as HTMLElement;
     const rect = imageContainer.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
@@ -31,7 +49,7 @@ export class HomeComponent {
     this.popup.nativeElement.style.opacity = '1';
   }
 
-  onMouseLeave(): void {
+  public onMouseLeave(): void {
     this.popup.nativeElement.style.opacity = '0';
   }
 }

@@ -26,15 +26,12 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   public getProjects() {
-    const subscription = this.projectsService.getProjects().subscribe({
-      next: (projects: IProject[]) => {
-        console.log(projects);
-        this.entities = projects;
-      },
-      error: (error: any) => {
-        console.log(error);
-      }
-    });
+    const subscription = this.projectsService.getProjects()
+      .subscribe({
+        next: (projects: IProject[]) => {
+          this.entities = projects;
+        }
+      });
 
     this.subscriptions.add(subscription);
   }
