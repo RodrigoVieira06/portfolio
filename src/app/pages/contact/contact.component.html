@@ -10,27 +10,32 @@
       <form class="body-contact__form" [formGroup]="contactForm" (ngSubmit)="sendEmail()">
         <div class="body-contact__form--row">
           <div class="field">
-            <!-- <label class="label-hidden" ngClass="">Nome</label> -->
-            <input id="name" class="input" type="text" formControlName="name" placeholder="Nome" [readonly]="isLoading"
-              required />
+            <label [ngClass]="{'focused': isFocused.name || contactForm.value.name}"> Nome </label>
+            <input id=" name" class="input" type="text" formControlName="name" placeholder="Nome" [readonly]="isLoading"
+              (focus)="onFocus('name')" (blur)="onBlur('name')" required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
-            <input id="email" class="input" type="email" formControlName="email" placeholder="Email"
-              [readonly]="isLoading" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+            <label [ngClass]="{'focused': isFocused.email || contactForm.value.email}"> E-mail </label>
+            <input id="email" class="input" type="email" formControlName="email" placeholder="E-mail"
+              [readonly]="isLoading" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              (focus)="onFocus('email')" (blur)="onBlur('email')" required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
+            <label [ngClass]="{'focused': isFocused.subject || contactForm.value.subject}"> Assunto </label>
             <input id="subject" class="input" type="text" formControlName="subject" placeholder="Assunto"
-              [readonly]="isLoading" required />
+              [readonly]="isLoading" (focus)="onFocus('subject')" (blur)="onBlur('subject')" required />
           </div>
         </div>
         <div class="body-contact__form--row">
           <div class="field">
+            <label [ngClass]="{'focused': isFocused.message || contactForm.value.message}"> Mensagem </label>
             <textarea id="message" class="input" formControlName="message" cols="30" rows="10"
-              placeholder="Escreva seu email" [readonly]="isLoading" required></textarea>
+              placeholder="Escreva seu email" [readonly]="isLoading" (focus)="onFocus('message')"
+              (blur)="onBlur('message')" required></textarea>
           </div>
         </div>
         <input type="hidden" [value]="staticFormsKey" formControlName="accessKey">

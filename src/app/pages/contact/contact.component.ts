@@ -19,6 +19,12 @@ export class ContactComponent {
   public whastappLink: string = 'https://wa.me/5521990012455';
 
   public isLoading: boolean = false;
+  public isFocused = {
+    name: false,
+    email: false,
+    subject: false,
+    message: false,
+  };
 
   public contactForm = new FormGroup({
     name: new FormControl(''),
@@ -43,6 +49,12 @@ export class ContactComponent {
         this.router.navigate(['contact/success']);
       });
   }
+  onFocus(field: 'name' | 'email' | 'subject' | 'message'): void {
+    this.isFocused[field] = true;
+  }
 
+  onBlur(field: 'name' | 'email' | 'subject' | 'message') {
+    this.isFocused[field] = false;
+  }
 
 }
