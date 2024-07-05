@@ -18,7 +18,7 @@
         "path": "assets/images/logos/typescriptLogo.png"
       }
     ],
-    "site": "https: //lipcat.com.br/pt"
+    "site": "https://lipcat.com.br/pt"
   },
   {
     "id": "2",
@@ -35,8 +35,8 @@
         "path": "assets/images/logos/dartLogo.png"
       }
     ],
-    "github": "https: //github.com/RodrigoVieira06/projeto-controle-financeiro",
-    "docs": "https: //docs.google.com/document/d/156lhCn88hBK34-2mN0VHaaMuc3f1FoCh/"
+    "github": "https://github.com/RodrigoVieira06/projeto-controle-financeiro",
+    "docs": "https://docs.google.com/document/d/156lhCn88hBK34-2mN0VHaaMuc3f1FoCh/"
   },
   {
     "id": "3",
@@ -61,7 +61,7 @@
         "path": "assets/images/logos/jasmineLogo.png"
       }
     ],
-    "github": "https: //github.com/RodrigoVieira06/projeto-controle-financeiro",
-    "docs": "https: //docs.google.com/document/d/156lhCn88hBK34-2mN0VHaaMuc3f1FoCh/"
+    "github": "https://github.com/RodrigoVieira06/projeto-controle-financeiro",
+    "site": "https://currency-converter-brl.vercel.app/"
   }
 ]
