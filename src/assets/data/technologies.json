@@ -65,6 +65,14 @@
     {
       "name": "Docker",
       "path": "assets/images/logos/dockerLogo.png"
+    },
+    {
+      "name": "NPM",
+      "path": "assets/images/logos/npmLogo.png"
+    },
+    {
+      "name": "Yarn",
+      "path": "assets/images/logos/yarnLogo.png"
     }
   ]
 }
