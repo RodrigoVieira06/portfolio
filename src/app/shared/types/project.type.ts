@@ -3,7 +3,10 @@ import { ITechnology } from "./technology.type";
 export interface IProject {
   id: string;
   name: string;
-  image: string;
+  pathImage: string;
+  pathAppImage: string;
+  pathVideo: string;
+  resume: string;
   description: string;
   technologies: ITechnology[];
   site?: string;

@@ -4,6 +4,7 @@
   justify-content: space-between;
   gap: 10px;
   height: 530px;
+  max-width: 440px;
   background-color: var(--main-theme-color);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -29,6 +30,19 @@
     text-align: justify;
     margin-inline: 15px;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--background-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--secundary-color);
+      border-radius: 20px;
+    }
   }
 
   &__technologies {
@@ -81,6 +95,23 @@
     font-weight: 700;
     text-align: center;
     align-self: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__open-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-inline: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+    font-size: 22px;
 
     &:hover {
       cursor: pointer;

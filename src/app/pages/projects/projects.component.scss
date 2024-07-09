@@ -26,19 +26,20 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
+  justify-items: center;
 
   margin-top: 15px;
   padding: 20px;
 
-  @media (min-width: 820px) {
+  @media (min-width: 950px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 1140px) {
+  @media (min-width: 1500px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 2000px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

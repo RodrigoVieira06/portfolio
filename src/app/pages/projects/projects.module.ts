@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { ModalComponent } from './components/modal-component/modal.component';
 
 
 
@@ -10,6 +11,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
   declarations: [
     ProjectsComponent,
     ProjectCardComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,

@@ -2,8 +2,11 @@
   {
     "id": 1,
     "name": "LIPCAT",
-    "description": "Um sistema de uma laboratório de química da UFRJ que contém uma landing page e um sistema intranet, que possibilita alunos e professores a gerenciarem o conteúdo presente nas telas visíveis para o publico geral, além de controle disponibilidade de conteúdo interno.",
-    "image": "assets/images/projects/lipcat.png",
+    "resume": "Desenvolvi um sistema de um laboratório de química da UFRJ que contém uma landing page e um sistema intranet, que possibilita alunos e professores a gerenciarem o conteúdo presente nas telas visíveis para o publico geral, além de possuir sistema de agendamento, material de apoio e recebimento de solicitações para serviços gerados na tela inicial.",
+    "description": "Este projeto foi elaborado para promover o site de um laboratório de intensificação de processos e catálise da UFRJ (Universidade Federal do Rio de Janeiro), onde, inicialmente temos uma landing page contendo as informações fundamentais da instituição e seus serviços que podem ser solicitados através da aba \"Fale conosco\". <br> <br> Além disso, o site possui um sistema intranet, que pode ser utilizado internamente pelos alunos e professos, tendo funcionalidades que podem moldar a landing page inicial, como o cadastro de apoiadores, produções científicas, membros de equipe, etc. Possui também um sistema de agendamento, material de apoio e visualização de solicitações. <br> <br> A aplicação funciona de maneira responsiva e conta com as tecnologias: ReactJS, NextJS, Tailwind, Material Design, i18n (para internacionalização), etc.",
+    "pathImage": "assets/images/projects/lipcat/lipcat.png",
+    "pathAppImage": "assets/images/projects/lipcat/lipcatAppImage.png",
+    "pathVideo": "assets/images/projects/lipcat/lipcatVideo.mp4",
     "technologies": [
       {
         "name": "React",
@@ -16,6 +19,10 @@
       {
         "name": "Typescript",
         "path": "assets/images/logos/typescriptLogo.png"
+      },
+      {
+        "name": "Tailwind",
+        "path": "assets/images/logos/tailwindLogo.png"
       }
     ],
     "site": "https://lipcat.com.br/pt"
@@ -23,8 +30,11 @@
   {
     "id": "2",
     "name": "Meu dinheiro",
-    "description": "Um aplicativo mobile que tem como objetivo auxiliar o gerenciamento financeiro pessoal, possibilitando o cadastro de entrada e saída de dinheiro, personalização de categorias, adição de cartões e visualização de gráficos.",
-    "image": "assets/images/projects/meudinheiro.png",
+    "resume": "Um aplicativo mobile que tem como objetivo auxiliar o gerenciamento financeiro pessoal, possibilitando o cadastro de entrada e saída de dinheiro, personalização de categorias, adição de cartões e visualização de gráficos.",
+    "description": "Este aplicativo mobile foi feito como um trabalho de conclusão de curso (TCC) para a formação de minha graduação em Análise e Desenvolvimento de Sistemas, onde foi feita uma pesquisa científica com o objetivo de solucionar um problema de controle financeiro na sociedade. <br> <br> Com base nesses estudos o aplicativo foi criado contendo módulos de dashboard inicial, cadastro de fluxo financeiro (entrada e saída de dinheiro), cadastro de categorias, cadastro de cartões (para controle de onde foi utilizado cada gasto) e gráficos para melhor visualização das despesas. <br> <br> Este aplicativo foi desenvolvido com o uso das tecnologias Flutter, Firebase (Authentication e Firestore Database) para o backend, Material Design, Modular, Gerenciamento de estados com Flutter Triple e gráficos gerados com FL Charts. <br> <br> O projeto obteve nota máxima no curso e está disponível para download utilizando o link do rodapé deste artigo.",
+    "pathImage": "assets/images/projects/meudinheiro/meudinheiro.png",
+    "pathAppImage": "assets/images/projects/meudinheiro/meudinheiroAppImage.png",
+    "pathVideo": "assets/images/projects/meudinheiro/meudinheiroVideo.mp4",
     "technologies": [
       {
         "name": "Flutter",
@@ -36,13 +46,16 @@
       }
     ],
     "github": "https://github.com/RodrigoVieira06/projeto-controle-financeiro",
-    "docs": "https://docs.google.com/document/d/156lhCn88hBK34-2mN0VHaaMuc3f1FoCh/"
+    "docs": "https://drive.google.com/file/d/1QRsYogKKEmCbRjTmIr1z9OXFAo0SBWod/view?usp=sharing"
   },
   {
     "id": "3",
     "name": "Currency converter",
-    "description": "Um aplicativo de conversão rápida e precisa de moedas para o Real brasileiro.",
-    "image": "assets/images/projects/currencyconverter.svg",
+    "resume": "Um aplicativo de conversão rápida e precisa de moedas para o Real brasileiro.",
+    "description": "Este aplicativo trata-se de um conversor de moedas para o Real brasileiro, surgindo com a proposta de exibir três opções de moedas e atualizar automaticamente a cada 3 minutos, cacheando as informações para evitar requisições desnecessárias. <br> <br> Para este projeto foram utilizadas as tecnologias Angular (versão 18), RxJS, Typescript, Docker e testes unitários com Jasmine e Karma. <br> <br> Caso queira colaborar com o projeto, ele conta com um README.md bem elaborado, com uma documentação detalhada para que você consiga entender como funciona o projeto, como informações de configuração de ambiente e informações de estrutura do código.",
+    "pathImage": "assets/images/projects/currencyconverter/currencyconverter.png",
+    "pathAppImage": "assets/images/projects/currencyconverter/currencyconverterAppImage.png",
+    "pathVideo": "",
     "technologies": [
       {
         "name": "Angular",
@@ -59,9 +72,42 @@
       {
         "name": "Jasmine",
         "path": "assets/images/logos/jasmineLogo.png"
+      },
+      {
+        "name": "SASS",
+        "path": "assets/images/logos/sassLogo.png"
       }
     ],
-    "github": "https://github.com/RodrigoVieira06/projeto-controle-financeiro",
+    "github": "https://github.com/RodrigoVieira06/CurrencyConverterBRL",
     "site": "https://currency-converter-brl.vercel.app/"
+  },
+  {
+    "id": "4",
+    "name": "Portfólio",
+    "resume": "Uma webpage com intuito de apresentar um pouco sobre mim, meus trabalhos e meus projetos desenvolvidos, além de um sistema de envio e autorresposta de emails utilizando a biblioteca EmailJS e a API do static forms.",
+    "description": "Este projeto trata-se de uma aplicação web que promove informações sobre mim como quem sou eu, minhas experiências e meus trabalhos desenvolvidos. <br><br> Ele foi dividido em módulos, assim como os outros projetos maiores, onde aqui temos uma tela inicial, uma aba sobre mim, uma de experiências, uma de projetos e uma de contato. <br><br> A aba de contato possui um formulário que dispara um email diretamente pra mim através de uma API do Static Forms, além de gerar uma auto mensagem ao usuário configurada a partir da biblioteca EmailJS. <br><br> Para este web app foram utilizadas as tecnologias Angular (versão 16), RxJS, Typescript, SCSS (sem frameworks de estilização) e as bibliotecas EmailJS e Fontawesome (para uso de ícones). ",
+    "pathImage": "assets/images/projects/portfolio/portfolio.png",
+    "pathAppImage": "assets/images/projects/portfolio/portfolioAppImage.png",
+    "pathVideo": "",
+    "technologies": [
+      {
+        "name": "Angular",
+        "path": "assets/images/logos/angularLogo.png"
+      },
+      {
+        "name": "Typescript",
+        "path": "assets/images/logos/typescriptLogo.png"
+      },
+      {
+        "name": "RxJS",
+        "path": "assets/images/logos/rxjsLogo.png"
+      },
+      {
+        "name": "SASS",
+        "path": "assets/images/logos/sassLogo.png"
+      }
+    ],
+    "site": "https://rodrigovieira.vercel.app/",
+    "github": "https://github.com/RodrigoVieira06/portfolio"
   }
 ]

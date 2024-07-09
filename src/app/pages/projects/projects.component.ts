@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     this.subscriptions.unsubscribe();
   }
 
-  public getProjects() {
+  public getProjects(): void {
     const subscription = this.projectsService.getProjects()
       .subscribe({
         next: (projects: IProject[]) => {

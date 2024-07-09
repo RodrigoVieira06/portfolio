@@ -9,4 +9,10 @@ import { IProject } from 'src/app/shared/types/project.type';
 export class ProjectCardComponent {
 
   @Input() public entity!: IProject;
+
+  public showModal: boolean = false;
+
+  public toggleModal(): void {
+    this.showModal = !this.showModal;
+  }
 }

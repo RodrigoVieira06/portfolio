@@ -1,0 +1,34 @@
+<main class="modal-container" [@openClose]="showModal ? 'open' : 'close'">
+  <section class="modal-container__content">
+    <header class="modal-container__content--header">
+      <h1>{{entity.name}}</h1>
+      <img class="card-container__image" [src]="entity.pathAppImage" [alt]="entity.name">
+    </header>
+    <article class="modal-container__content--body">
+      <p [innerHTML]="entity.description"></p>
+      <video controls *ngIf="!!entity.pathVideo">
+        <source [src]="entity.pathVideo" type="video/mp4" >
+      </video>
+    </article>
+    <footer class="modal-container__content--footer">
+      <p>Conheça mais do projeto acessando os links abaixo:</p>
+      <section class="links">
+        <a [href]="entity.site" target="_blank" *ngIf="!!entity.site">
+          <fa-icon class="no-theme-transition" [icon]="['fas', 'globe']"></fa-icon>
+          Site
+        </a>
+        <a [href]="entity.github" target="_blank" *ngIf="!!entity.github">
+          <fa-icon class="no-theme-transition" [icon]="['fab', 'github']"></fa-icon>
+          Projeto
+        </a>
+        <a [href]="entity.docs" target="_blank" *ngIf="!!entity.docs">
+          <fa-icon class="no-theme-transition" [icon]="['far', 'file-lines']"></fa-icon>
+          Monografia
+        </a>
+      </section>
+    </footer>
+  </section>
+  <div class="close-button" [@openClose]="showModal ? 'open' : 'close'" (click)="toggle()">
+    <fa-icon class="no-theme-transition" [icon]="['fas', 'times']"></fa-icon>
+  </div>
+</main>

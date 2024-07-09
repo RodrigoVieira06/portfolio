@@ -1,0 +1,135 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  cursor: default;
+
+  &__content {
+    background-color: var(--main-theme-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 80vw;
+    min-width: 40vw;
+    word-wrap: break-word;
+    margin: 15px;
+    overflow-y: auto;
+
+    &--header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      h1 {
+        font-size: 35px;
+
+        @media (min-width: 400px) {
+          font-size: 40px;
+        }
+
+        @media (min-width: 600px) {
+          font-size: 45px;
+        }
+
+        @media (min-width: 800px) {
+          font-size: 50px;
+        }
+
+        @media (min-width: 1000px) {
+          font-size: 60px;
+        }
+
+        @media (min-width: 1200px) {
+          font-size: 70px;
+        }
+      }
+
+      img {
+        display: none;
+
+        @media (min-width: 500px) {
+          display: block;
+          width: 20vw;
+          max-height: 350px;
+          object-fit: cover;
+          margin: 15px;
+        }
+      }
+    }
+
+    &--body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+
+      p {
+        font-size: 16px;
+      }
+
+      video {
+        width: 50vw;
+        max-height: 350px;
+        margin: 30px;
+      }
+
+
+    }
+
+    &--footer {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: space-around;
+      margin: 20px;
+      font-size: 24px;
+
+      p {
+        font-size: 18px;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--background-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--secundary-color);
+      border-radius: 20px;
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  font-size: 40px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+h1,
+p {
+  cursor: text;
+}
