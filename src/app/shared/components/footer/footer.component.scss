@@ -1,6 +1,5 @@
 .main-footer {
   background-color: var(--main-theme-color);
-  height: max-content;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   display: flex;
@@ -8,6 +7,9 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
 
   @media (min-width: 640px) {
     flex-direction: row;

@@ -1,7 +1,9 @@
-<app-header />
-<app-divider />
-<main class="main-background">
+<video autoplay muted loop id="background-video">
+  <source src="assets/backgrounds/light.mp4" type="video/mp4">
+</video>
+<div class="content">
+  <app-header />
+  <app-divider />
   <router-outlet />
-</main>
-<app-divider />
-<app-footer />
+  <app-footer />
+</div>

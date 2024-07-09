@@ -1,8 +1,10 @@
 .main-home {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  min-height: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .intro {
@@ -34,27 +36,51 @@
   }
 
   @media (min-width: 315px) {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   @media (min-width: 400px) {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   @media (min-width: 640px) {
-    font-size: 60px;
+    font-size: 45px;
   }
 
   @media (min-width: 960px) {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   &__title {
     margin-bottom: 25px;
+    font-family: 'moon_get', sans-serif;
+    // animation: shadow-gradient 3s ease infinite;
+
+    // @keyframes shadow-gradient {
+    //   0% {
+    //     text-shadow: 2px 2px 5px var(--primary-color), 4px 4px 10px var(--secundary-color), 6px 6px 15px var(--accent-color);
+    //   }
+
+    //   25% {
+    //     text-shadow: 2px 2px 5px var(--secundary-color), 4px 4px 10px var(--accent-color), 6px 6px 15px var(--primary-color);
+    //   }
+
+    //   50% {
+    //     text-shadow: 2px 2px 5px var(--accent-color), 4px 4px 10px var(--primary-color), 6px 6px 15px var(--secundary-color);
+    //   }
+
+    //   75% {
+    //     text-shadow: 2px 2px 5px var(--primary-color), 4px 4px 10px var(--secundary-color), 6px 6px 15px var(--accent-color);
+    //   }
+
+    //   100% {
+    //     text-shadow: 2px 2px 5px var(--primary-color), 4px 4px 10px var(--secundary-color), 6px 6px 15px var(--accent-color);
+    //   }
+    // }
   }
 
   &__technologies {

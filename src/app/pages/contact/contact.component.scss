@@ -1,4 +1,7 @@
 .main-contact {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: justify;
@@ -71,7 +74,7 @@
 
     .input {
       border: 0;
-      background-color: var(--background-color);
+      background-color: var(--input-color);
       margin-block: 10px;
       font-size: 14px;
       padding-inline: 15px;

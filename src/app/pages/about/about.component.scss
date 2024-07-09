@@ -1,4 +1,7 @@
 .main-about {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: justify;

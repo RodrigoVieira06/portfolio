@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'moon_get';
+  src: url('assets/fonts/moon_get-Heavy.otf') format('opentype');
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -107,7 +112,6 @@ body {
   height: 100%;
   color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
-  background-color: var(--main-theme-color);
 }
 
 article,
@@ -157,37 +161,49 @@ table {
 }
 
 :root {
-  --primary-color: #165A48;
+  // main colors
+  --primary-color: #26A382;
   --secundary-color: #6B6B6B;
   --accent-color: #56DAB5;
-  --background-color: #F3F3F3;
-  --main-theme-color: #FFFFFF;
-  --contrast-color: #000000;
-
-  --block-color: #D6D6D6C5;
-  --text-block-color: #165A4873;
-
   --danger-color: #DB162F;
   --warning-color: #FC814A;
+  --contrast-color: #000000;
 
+  // util colors
+  --input-color: #F3F3F3;
+  --main-theme-color: #FFFFFF;
   --popup-color: rgba(0, 0, 0, 0.7);
-  --background-line-color: #E1E1E1;
+  --block-color: #D6D6D6C5;
+  --text-block-color: #165A4873;
+  --background-scrollbar-color: #F3F3F3;
 
+  // background colors
+  --background-gradient-primary-color: #30d8d0;
+  --background-gradient-secundary-color: #6dfaf3;
+  --background-gradient-tertiary-color: #FFFFFF;
+
+  // shadow colors
   --shadow-color: rgba(0, 0, 0, 0.2);
   --shadow-danger-color: rgba(255, 2, 2, 0.3);
 }
 
 :root .dark-theme {
-  --primary-color: #26A382;
+  // main colors
   --accent-color: #60f1C8;
   --background-color: #181818;
   --main-theme-color: #131313;
   --contrast-color: #FFFFFF;
 
+  // util colors
   --popup-color: rgba(255, 255, 255, 0.7);
-  --background-line-color: #2c2c2c;
 
-  --shadow-color: #26a38246;
+  // background colors
+  --background-gradient-primary-color: #0f0c29;
+  --background-gradient-secundary-color: #302b63;
+  --background-gradient-tertiary-color: #24243e;
+
+  // shadow colors
+  --shadow-color: #26A382;
   --shadow-danger-color: rgba(255, 2, 2, 0.3);
 }
 
@@ -195,12 +211,21 @@ table {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.background-page {
-  --color: var(--background-line-color);
-  background-color: var(--background-color);
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
-  background-size: 55px 55px;
+
+// END - BACKGROUND
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 // START - SCROLLBAR
@@ -216,4 +241,5 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--secundary-color);
   border-radius: 20px;
 }
+
 // END - SCROLLBAR
