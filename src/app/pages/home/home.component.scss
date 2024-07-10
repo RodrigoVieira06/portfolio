@@ -20,13 +20,12 @@
   gap: 5px;
   text-align: center;
   font-size: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .frontend-developer-container {
   display: flex;
   flex-direction: column;
-  text-align: center;
   font-size: 30px;
   justify-content: center;
   align-items: center;
@@ -55,32 +54,30 @@
     font-size: 60px;
   }
 
-  &__title {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 25px;
     font-family: 'moon_get', sans-serif;
-    // animation: shadow-gradient 3s ease infinite;
+    width: 100%;
 
-    // @keyframes shadow-gradient {
-    //   0% {
-    //     text-shadow: 2px 2px 5px var(--primary-color), 4px 4px 10px var(--secundary-color), 6px 6px 15px var(--accent-color);
-    //   }
+    &--title {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-    //   25% {
-    //     text-shadow: 2px 2px 5px var(--secundary-color), 4px 4px 10px var(--accent-color), 6px 6px 15px var(--primary-color);
-    //   }
-
-    //   50% {
-    //     text-shadow: 2px 2px 5px var(--accent-color), 4px 4px 10px var(--primary-color), 6px 6px 15px var(--secundary-color);
-    //   }
-
-    //   75% {
-    //     text-shadow: 2px 2px 5px var(--primary-color), 4px 4px 10px var(--secundary-color), 6px 6px 15px var(--accent-color);
-    //   }
-
-    //   100% {
-    //     text-shadow: 2px 2px 5px var(--primary-color), 4px 4px 10px var(--secundary-color), 6px 6px 15px var(--accent-color);
-    //   }
-    // }
+    &--avatar {
+      img {
+        width: 200px;
+        padding: 3px;
+        border-radius: 100px;
+        border: 2px solid var(--contrast-color);
+      }
+    }
   }
 
   &__technologies {
