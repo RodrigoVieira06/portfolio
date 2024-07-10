@@ -1,13 +1,15 @@
-<header class="main-header main-padding">
-  <img class="main-logo" src="assets/images/brand/marca_rodrigo_vieira_principal-horizontal.png" alt="Angular"
-    [routerLink]="['/home']">
-  <!-- <a [routerLink]="['/home']"> RODRIGO VIEIRA </a> -->
-  <ul class="menu-list">
+<header class="header-container main-padding">
+  <img class="header-container__logo" src="assets/images/brand/marca_rodrigo_vieira_principal-horizontal.png"
+    alt="Angular" [routerLink]="['/home']">
+  <ul class="header-container__menu-list" [ngClass]="{'menu-open': menuOpen}">
     <li>
       <a [routerLink]="['/home']" routerLinkActive="active">início</a>
     </li>
     <li>
       <a [routerLink]="['/about']" routerLinkActive="active">sobre</a>
+    </li>
+    <li>
+      <a [routerLink]="['/experiences']" routerLinkActive="active">experiências</a>
     </li>
     <li>
       <a [routerLink]="['/projects']" routerLinkActive="active">projetos</a>
@@ -16,25 +18,24 @@
       <a [routerLink]="['/contact']" routerLinkActive="active">contato</a>
     </li>
   </ul>
-  <ul class="menu-list">
+  <ul class="header-container__social-media-list" [ngClass]="{'menu-open': menuOpen}">
     <li>
-      <a class="no-theme-transition" href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"
+      <a href="{{linkedinLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'linkedin']"
           size="xl"></fa-icon></a>
     </li>
     <li>
-      <a class="no-theme-transition" href="{{githubLink}}" target="_blank"><fa-icon [icon]="['fab', 'github']"
+      <a href="{{githubLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'github']"
           size="xl"></fa-icon></a>
     </li>
     <li>
-      <a class="no-theme-transition" href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']"
+      <a href="{{whastappLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'whatsapp']"
           size="xl"></fa-icon></a>
     </li>
   </ul>
-  <ul>
-    <li>
-      <a class="no-theme-transition" (click)="toggleStylesTheme()">
-        <fa-icon class="icon-theme" [icon]="['far', icon ]"></fa-icon>
-      </a>
-    </li>
-  </ul>
+  <section class="header-container__menu-burguer">
+    <a (click)="menuToggle()">
+      <fa-icon class="no-theme-transition" [icon]="['fas', 'bars']" *ngIf="!menuOpen"></fa-icon>
+      <fa-icon class="no-theme-transition" [icon]="['fas', 'times']" *ngIf="menuOpen"></fa-icon>
+    </a>
+  </section>
 </header>

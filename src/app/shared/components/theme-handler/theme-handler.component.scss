@@ -1,0 +1,28 @@
+.theme-container {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 9999;
+
+  &__icon-theme {
+    font-size: 30px;
+    background-color: var(--primary-color);
+    border: 0px solid var(--primary-color);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    a {
+      color: var(--main-theme-color);
+
+    }
+
+    &:hover {
+      background-color: var(--accent-color);
+    }
+  }
+}

@@ -7,7 +7,7 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { faCircleCheck, faFileLines, faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
-import { faArrowUpRightFromSquare, faGlobe, faPaperPlane, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faBars, faGlobe, faPaperPlane, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { AboutModule } from './pages/about/about.module';
 import { ContactModule } from './pages/contact/contact.module';
 import { HomeModule } from './pages/home/home.module';
@@ -49,7 +49,8 @@ export class AppModule {
       faPaperPlane,
       faTimes,
       faGlobe,
-      faFileLines
+      faFileLines,
+      faBars
     );
   }
 }
