@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   min-height: 100%;
-  padding-top: 1.25rem;
+  padding-top: 30px;
   padding-bottom: 1.25rem;
 }
 
@@ -15,35 +15,29 @@
 }
 
 .welcome {
-  display: flex;
-  flex-direction: column;
   gap: 5px;
   text-align: center;
-  font-size: 22px;
-  margin-bottom: 50px;
+  font-size: 18px;
+  margin-bottom: 15px;
+
+  b {
+    font-weight: 700;
+  }
 }
 
 .frontend-developer-container {
   display: flex;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 25px;
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 280px) {
-    font-size: 35px;
-  }
-
-  @media (min-width: 315px) {
-    font-size: 35px;
-  }
-
   @media (min-width: 400px) {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   @media (min-width: 640px) {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   @media (min-width: 960px) {
@@ -57,25 +51,35 @@
   &__main {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 25px;
-    font-family: 'moon_get', sans-serif;
     width: 100%;
 
     &--title {
+      font-family: 'moon_get', sans-serif;
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
 
     &--avatar {
+      margin-top: 5px;
+
       img {
         width: 200px;
-        padding: 3px;
         border-radius: 100px;
         border: 2px solid var(--contrast-color);
+      }
+    }
+
+    &--resume {
+      font-size: 16px;
+      word-wrap: break-word;
+
+      @media (min-width: 600px) {
+        font-size: 18px;
       }
     }
   }
@@ -86,10 +90,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-inline: 15px;
 
     .popup {
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: var(--popup-color);
       color: var(--main-theme-color);
       padding: 5px 10px;
       border-radius: 5px;
@@ -114,7 +119,11 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 25px;
+
+      .logo {
+        margin-inline: 15px;
+        margin-bottom: 10px;
+      }
 
       img {
         width: 40px;

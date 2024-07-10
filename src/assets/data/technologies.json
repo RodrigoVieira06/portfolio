@@ -17,15 +17,15 @@
       "path": "assets/images/logos/typescriptLogo.png"
     },
     {
+      "name": "Javascript",
+      "path": "assets/images/logos/javascriptLogo.png"
+    },
+    {
       "name": "Flutter",
       "path": "assets/images/logos/flutterLogo.png"
     }
   ],
   "secondary": [
-    {
-      "name": "Javascript",
-      "path": "assets/images/logos/javascriptLogo.png"
-    },
     {
       "name": "Sass",
       "path": "assets/images/logos/sassLogo.png"

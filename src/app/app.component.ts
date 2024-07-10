@@ -36,7 +36,6 @@ export class AppComponent implements OnInit {
       this.renderer.setAttribute(sourceElement, 'src', 'assets/backgrounds/light.mp4');
     }
 
-    // Reload the video to apply the new source
     videoElement.load();
   }
 }
