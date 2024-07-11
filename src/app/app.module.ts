@@ -6,14 +6,15 @@ import { AppComponent } from './app.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { faCircleCheck, faFileLines, faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
-import { faArrowUpRightFromSquare, faBars, faGlobe, faPaperPlane, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faCircleCheck, faCircleDot, faFileLines, faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
+import { faArrowUpRightFromSquare, faBars, faChevronLeft, faChevronRight, faGlobe, faPaperPlane, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { AboutModule } from './pages/about/about.module';
 import { ContactModule } from './pages/contact/contact.module';
 import { HomeModule } from './pages/home/home.module';
 import { ProjectsModule } from './pages/projects/projects.module';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ExperiencesModule } from './pages/experiences/experiences.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     AboutModule,
     ContactModule,
+    ExperiencesModule,
     HomeModule,
     ProjectsModule,
     SharedModule,
@@ -50,7 +52,11 @@ export class AppModule {
       faTimes,
       faGlobe,
       faFileLines,
-      faBars
+      faBars,
+      faChevronLeft,
+      faChevronRight,
+      faCircle,
+      faCircleDot
     );
   }
 }
