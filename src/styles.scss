@@ -6,10 +6,12 @@
 a {
   text-decoration: none;
   color: var(--primary-color);
+  transition: color 500ms ease;
 }
 
 a:hover {
   color: var(--accent-color);
+  transition: color 500ms ease;
 }
 
 ul,
@@ -168,6 +170,7 @@ table {
   --danger-color: #DB162F;
   --warning-color: #FC814A;
   --contrast-color: #000000;
+  --white-color: #FFFFFF;
 
   // util colors
   --input-color: #F3F3F3;
@@ -176,6 +179,7 @@ table {
   --block-color: #D6D6D6C5;
   --text-block-color: #165A4873;
   --background-scrollbar-color: #F3F3F3;
+  --arrow-control-color: #F3F3F3;
 
   // background colors
   --background-gradient-primary-color: #30d8d0;
@@ -197,6 +201,7 @@ table {
 
   // util colors
   --popup-color: rgba(255, 255, 255, 0.7);
+  --arrow-control-color: #202020;
 
   // background colors
   --background-gradient-primary-color: #0f0c29;
@@ -207,10 +212,6 @@ table {
   --shadow-color: #26A382;
   --shadow-danger-color: rgba(255, 2, 2, 0.3);
   --box-shadow: #60f1C860 0px 2px 4px, #60f1C840 0px 7px 13px -3px, #60f1C830 0px -3px 0px inset;
-}
-
-*:not(.no-theme-transition) {
-  transition: background-color 0.3s, color 0.3s;
 }
 
 

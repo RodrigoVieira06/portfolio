@@ -20,22 +20,22 @@
   </ul>
   <ul class="header-container__social-media-list" [ngClass]="{'menu-open': menuOpen}">
     <li>
-      <a href="{{linkedinLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'linkedin']"
+      <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"
           size="xl"></fa-icon></a>
     </li>
     <li>
-      <a href="{{githubLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'github']"
+      <a href="{{githubLink}}" target="_blank"><fa-icon [icon]="['fab', 'github']"
           size="xl"></fa-icon></a>
     </li>
     <li>
-      <a href="{{whastappLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'whatsapp']"
+      <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']"
           size="xl"></fa-icon></a>
     </li>
   </ul>
   <section class="header-container__menu-burguer">
     <a (click)="menuToggle()">
-      <fa-icon class="no-theme-transition" [icon]="['fas', 'bars']" *ngIf="!menuOpen"></fa-icon>
-      <fa-icon class="no-theme-transition" [icon]="['fas', 'times']" *ngIf="menuOpen"></fa-icon>
+      <fa-icon [icon]="['fas', 'bars']" *ngIf="!menuOpen"></fa-icon>
+      <fa-icon [icon]="['fas', 'times']" *ngIf="menuOpen"></fa-icon>
     </a>
   </section>
 </header>

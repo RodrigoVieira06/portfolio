@@ -9,20 +9,21 @@
     background-color: var(--primary-color);
     border: 0px solid var(--primary-color);
     border-radius: 100%;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 500ms ease;
     cursor: pointer;
 
     a {
-      color: var(--main-theme-color);
-
+      color: var(--white-color);
     }
 
     &:hover {
       background-color: var(--accent-color);
+      transition: background-color 500ms ease;
     }
   }
 }

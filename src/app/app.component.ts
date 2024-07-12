@@ -6,8 +6,6 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  videoSource: string = 'assets/backgrounds/light.mp4';
-
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {

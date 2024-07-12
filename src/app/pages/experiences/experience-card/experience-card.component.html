@@ -20,9 +20,9 @@
     <span class="experiences-container__description--footer">
       <div *ngFor="let entityDot of entities; let i = index">
         <a (click)="goToExperience(i)">
-          <fa-icon class="no-theme-transition" [icon]="['far', 'circle']" *ngIf="entityIndex !== i"></fa-icon>
+          <fa-icon [icon]="['far', 'circle']" *ngIf="entityIndex !== i"></fa-icon>
         </a>
-        <fa-icon class="no-theme-transition" [icon]="['far', 'circle-dot']" *ngIf="entityIndex === i"></fa-icon>
+        <fa-icon [icon]="['far', 'circle-dot']" *ngIf="entityIndex === i"></fa-icon>
       </div>
     </span>
   </article>

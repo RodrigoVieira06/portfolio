@@ -128,14 +128,16 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  cursor: pointer;
   padding-inline: 10px;
+  transition: background-color 500ms ease;
+  cursor: pointer;
 
   @media (min-width: 600px) {
     padding-inline: 20px;
   }
 
   &:hover {
-    background-color: var(--input-color);
+    background-color: var(--arrow-control-color);
+    transition: background-color 500ms ease;
   }
 }

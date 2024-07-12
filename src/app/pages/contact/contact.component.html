@@ -41,7 +41,7 @@
         <input type="hidden" [value]="staticFormsKey" formControlName="accessKey">
 
         <button type="submit" [disabled]="!contactForm.valid || isLoading">
-          Enviar <fa-icon class="no-theme-transition" [icon]="['fas', 'paper-plane']"></fa-icon>
+          Enviar <fa-icon [icon]="['fas', 'paper-plane']"></fa-icon>
         </button>
 
       </form>
@@ -49,11 +49,11 @@
         <p>Ou entre em contato através de alguma das redes sociais</p>
         <ul class="body-contact__social-media--menu-list">
           <li>
-            <a href="{{linkedinLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'linkedin']"
+            <a href="{{linkedinLink}}" target="_blank"><fa-icon [icon]="['fab', 'linkedin']"
                 size="xl"></fa-icon></a>
           </li>
           <li>
-            <a href="{{whastappLink}}" target="_blank"><fa-icon class="no-theme-transition" [icon]="['fab', 'whatsapp']"
+            <a href="{{whastappLink}}" target="_blank"><fa-icon [icon]="['fab', 'whatsapp']"
                 size="xl"></fa-icon></a>
           </li>
         </ul>
