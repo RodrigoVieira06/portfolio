@@ -3,12 +3,21 @@ import { Router } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ContactService } from 'src/app/shared/services/contact/contact.service';
 import { environment } from 'src/environments/environment';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  animations: [
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('500ms ease-in', style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class ContactComponent {
   public staticFormsKey: string = environment.staticForms.accessKey;

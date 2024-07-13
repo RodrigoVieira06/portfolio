@@ -1,10 +1,19 @@
+import { trigger, transition, style, animate } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-success',
   templateUrl: './success.component.html',
-  styleUrls: ['./success.component.scss']
+  styleUrls: ['./success.component.scss'],
+  animations: [
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('500ms ease-in', style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class SuccessComponent {
   public pathName: string = '';
