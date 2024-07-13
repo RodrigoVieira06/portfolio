@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('popup', { static: true }) popup!: ElementRef<HTMLDivElement>;
 
   public primaryTechnologies: ITechnology[] = [];
-  public secundaryTechnologies: ITechnology[] = [];
+  public secondaryTechnologies: ITechnology[] = [];
 
   private subscriptions = new Subscription();
 
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       .subscribe({
         next: (technologies: ITechnologyLevels) => {
           this.primaryTechnologies = technologies.primary;
-          this.secundaryTechnologies = technologies.secondary
+          this.secondaryTechnologies = technologies.secondary
         }
       });
 

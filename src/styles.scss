@@ -165,7 +165,7 @@ table {
 :root {
   // main colors
   --primary-color: #26A382;
-  --secundary-color: #6B6B6B;
+  --secondary-color: #6B6B6B;
   --accent-color: #56DAB5;
   --danger-color: #DB162F;
   --warning-color: #FC814A;
@@ -183,7 +183,7 @@ table {
 
   // background colors
   --background-gradient-primary-color: #30d8d0;
-  --background-gradient-secundary-color: #6dfaf3;
+  --background-gradient-secondary-color: #6dfaf3;
   --background-gradient-tertiary-color: #FFFFFF;
 
   // shadow colors
@@ -205,7 +205,7 @@ table {
 
   // background colors
   --background-gradient-primary-color: #0f0c29;
-  --background-gradient-secundary-color: #302b63;
+  --background-gradient-secondary-color: #302b63;
   --background-gradient-tertiary-color: #24243e;
 
   // shadow colors
@@ -241,7 +241,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--secundary-color);
+  background-color: var(--secondary-color);
   border-radius: 20px;
 }
 
