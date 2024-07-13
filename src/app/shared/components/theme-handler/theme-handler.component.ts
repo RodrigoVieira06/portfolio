@@ -8,17 +8,17 @@ import { IconName } from '@fortawesome/fontawesome-svg-core';
   styleUrls: ['./theme-handler.component.scss']
 })
 export class ThemeHandlerComponent {
-  public icon: IconName = 'sun';
+  public icon: IconName = 'moon';
 
   public toggleStylesTheme(): void {
     const theme = document.body.classList.toggle('dark-theme');
 
     if (theme) {
-      this.icon = 'moon';
+      this.icon = 'sun';
       return;
     }
 
-    this.icon = 'sun';
+    this.icon = 'moon';
     return;
   }
 }
