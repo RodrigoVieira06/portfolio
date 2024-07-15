@@ -1,4 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,11 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   public showAll: boolean = false;
-  constructor(private renderer: Renderer2) { }
+
+  constructor(
+    private renderer: Renderer2,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.updateVideoSource();
@@ -27,6 +33,15 @@ export class AppComponent implements OnInit {
   }
 
   public animateShowAll(): void {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        if (this.router.url !== '/home') {
+          this.showAll = true;
+          return;
+        }
+      });
+
     setTimeout(() => {
       this.showAll = true;
     }, 5000);
