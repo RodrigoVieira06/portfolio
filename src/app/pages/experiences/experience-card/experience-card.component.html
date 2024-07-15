@@ -1,6 +1,7 @@
-<section class="experiences-container" *ngFor="let entity of entities; let i = index"
-  [ngClass]="{'padding-left': entityIndex === 0, 'padding-right': entityIndex === (entities.length - 1), 'card-hidden': entityIndex !== i}">
-  <span class="arrow-button" *ngIf="entityIndex !== 0" (click)="goToExperience(i-1)">
+<section class="experiences-container"
+  [ngClass]="{'padding-left': entityIndex === 0, 'padding-right': entityIndex === (entities.length - 1)}"
+  [@slideInOut]="entityIndex">
+  <span class="arrow-button" *ngIf="entityIndex !== 0" (click)="goToExperience(entityIndex - 1)">
     <a>
       <fa-icon class="no-theme-transition arrow" [icon]="['fas', 'chevron-left']"></fa-icon>
     </a>
@@ -8,17 +9,17 @@
   <article class="experiences-container__description">
     <header class="experiences-container__description--header">
       <div class="title">
-        <h1>{{entity.role}}</h1>
-        <p>{{entity.period}}</p>
+        <h1>{{entities[entityIndex] && entities[entityIndex].role}}</h1>
+        <p>{{entities[entityIndex] && entities[entityIndex].period}}</p>
       </div>
       <div class="enterprise">
-        <img [src]="entity.enterprisePathLogo" alt="enterprise logo">
-        <p>{{entity.enterprise}}</p>
+        <img [src]="entities[entityIndex] && entities[entityIndex].enterprisePathLogo" alt="enterprise logo">
+        <p>{{entities[entityIndex] && entities[entityIndex].enterprise}}</p>
       </div>
     </header>
     <span class="experiences-container__description--technologies">
       <div class="primary-logo">
-        <div *ngFor="let logo of entity.technologies.primary">
+        <div *ngFor="let logo of entities[entityIndex] && entities[entityIndex].technologies.primary">
           <div class="logo">
             <img [src]="logo.path" [alt]="logo.name">
             <div class="popup">{{logo.name}}</div>
@@ -26,7 +27,7 @@
         </div>
       </div>
       <div class="secondary-logo">
-        <div *ngFor="let logo of entity.technologies.secondary">
+        <div *ngFor="let logo of entities[entityIndex] && entities[entityIndex].technologies.secondary">
           <div class="logo">
             <img [src]="logo.path" [alt]="logo.name">
             <div class="popup">{{logo.name}}</div>
@@ -34,7 +35,8 @@
         </div>
       </div>
     </span>
-    <main class="experiences-container__description--body" [innerHTML]="entity.description"></main>
+    <main class="experiences-container__description--body"
+      [innerHTML]="entities[entityIndex] && entities[entityIndex].description"></main>
     <footer class="experiences-container__description--footer">
       <div *ngFor="let entityDot of entities; let i = index">
         <a (click)="goToExperience(i)">
@@ -44,7 +46,7 @@
       </div>
     </footer>
   </article>
-  <span class="arrow-button" *ngIf="entityIndex !== (entities.length - 1)" (click)="goToExperience(i+1)">
+  <span class="arrow-button" *ngIf="entityIndex !== (entities.length - 1)" (click)="goToExperience(entityIndex + 1)">
     <a>
       <fa-icon class="no-theme-transition arrow" [icon]="['fas', 'chevron-right']"></fa-icon>
     </a>

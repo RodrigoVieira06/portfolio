@@ -1,5 +1,6 @@
 <section class="experiences-container"
-  [ngClass]="{'padding-left': entityIndex === 0, 'padding-right': entityIndex === (entities.length - 1)}" [@slideInOut]="entityIndex">
+  [ngClass]="{'padding-left': entityIndex === 0, 'padding-right': entityIndex === (entities.length - 1)}"
+  [@slideInOut]="entityIndex">
   <span class="arrow-button" *ngIf="entityIndex !== 0" (click)="goToExperience(entityIndex - 1)">
     <a>
       <fa-icon class="no-theme-transition arrow" [icon]="['fas', 'chevron-left']"></fa-icon>
