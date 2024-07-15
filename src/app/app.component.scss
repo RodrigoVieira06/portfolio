@@ -8,10 +8,19 @@
   z-index: -1;
 }
 
-.content {
+.app-component-content {
   position: relative;
   z-index: 1;
   margin: 0 auto;
   text-align: center;
   height: 80%;
+
+  &__hidden {
+    opacity: 0;
+  }
+
+  &__show {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
 }

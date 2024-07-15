@@ -3,9 +3,10 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  public showAll: boolean = false;
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
@@ -21,6 +22,14 @@ export class AppComponent implements OnInit {
       attributes: true,
       attributeFilter: ['class']
     });
+
+    this.animateShowAll();
+  }
+
+  public animateShowAll(): void {
+    setTimeout(() => {
+      this.showAll = true;
+    }, 5000);
   }
 
   updateVideoSource(): void {

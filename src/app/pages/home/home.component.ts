@@ -16,10 +16,15 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   private subscriptions = new Subscription();
 
+  public showGreetings: boolean = false;
+  public showTitle: boolean = false;
+  public showAll: boolean = false;
+
   constructor(private technologiesService: TechnologiesService) { }
 
   ngOnInit(): void {
     this.getTechnologies();
+    this.animateIntro();
   }
 
   ngOnDestroy(): void {
@@ -51,5 +56,17 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public onMouseLeave(): void {
     this.popup.nativeElement.style.opacity = '0';
+  }
+
+  private animateIntro(): void {
+    setTimeout(() => {
+      this.showGreetings = true;
+      setTimeout(() => {
+        this.showTitle = true;
+        setTimeout(() => {
+          this.showAll = true;
+        }, 1000);
+      }, 2000);
+    }, 500);
   }
 }

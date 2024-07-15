@@ -1,10 +1,14 @@
 <video autoplay muted loop id="background-video">
   <source src="assets/backgrounds/light.mp4" type="video/mp4">
 </video>
-<div class="content">
-  <app-header />
-  <app-divider />
+<div class="app-component-content">
+  <div [ngClass]="{'app-component-content__show': showAll, 'app-component-content__hidden': !showAll}">
+    <app-header />
+    <app-divider />
+  </div>
   <router-outlet />
-  <app-footer />
-  <app-theme-handler />
+  <div [ngClass]="{'app-component-content__show': showAll, 'app-component-content__hidden': !showAll}">
+    <app-footer />
+    <app-theme-handler />
+  </div>
 </div>
