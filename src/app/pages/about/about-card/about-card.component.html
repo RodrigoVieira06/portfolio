@@ -1,0 +1,37 @@
+<section class="experiences-container"
+  [ngClass]="{'padding-left': entityIndex === 0, 'padding-right': entityIndex === (entities.length - 1)}" [@slideInOut]="entityIndex">
+  <span class="arrow-button" *ngIf="entityIndex !== 0" (click)="goToExperience(entityIndex - 1)">
+    <a>
+      <fa-icon class="no-theme-transition arrow" [icon]="['fas', 'chevron-left']"></fa-icon>
+    </a>
+  </span>
+  <section class="experiences-container__image-container"
+    *ngIf="entities[entityIndex] && entities[entityIndex].imagePath">
+    <img [src]="entities[entityIndex] && entities[entityIndex].imagePath" alt="Foto pessoal">
+  </section>
+  <article class="experiences-container__description">
+    <header class="experiences-container__description--header">
+      <div class="title">
+        <h1>{{entities[entityIndex] && entities[entityIndex].title}}</h1>
+      </div>
+      <div class="enterprise">
+      </div>
+    </header>
+    <main class="experiences-container__description--body"
+      [innerHTML]="entities[entityIndex] && entities[entityIndex].descriptionContent">
+    </main>
+    <footer class="experiences-container__description--footer">
+      <div *ngFor="let entityDot of entities; let i = index">
+        <a (click)="goToExperience(i)">
+          <fa-icon [icon]="['far', 'circle']" *ngIf="entityIndex !== i"></fa-icon>
+        </a>
+        <fa-icon [icon]="['far', 'circle-dot']" *ngIf="entityIndex === i"></fa-icon>
+      </div>
+    </footer>
+  </article>
+  <span class="arrow-button" *ngIf="entityIndex !== (entities.length - 1)" (click)="goToExperience(entityIndex + 1)">
+    <a>
+      <fa-icon class="no-theme-transition arrow" [icon]="['fas', 'chevron-right']"></fa-icon>
+    </a>
+  </span>
+</section>

@@ -48,5 +48,4 @@ export class ExperienceCardComponent implements OnInit {
   public goToExperience(index: number): void {
     this.entityIndex = index;
   }
-
 }
