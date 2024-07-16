@@ -12,4 +12,5 @@ export interface IProject {
   site?: string;
   github?: string;
   docs?: string;
+  download?: string;
 }

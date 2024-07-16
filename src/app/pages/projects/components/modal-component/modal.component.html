@@ -25,6 +25,10 @@
           <fa-icon [icon]="['far', 'file-lines']"></fa-icon>
           Monografia
         </a>
+        <a [href]="entity.docs" target="_blank" *ngIf="!!entity.download">
+          <fa-icon [icon]="['fab', 'android']"></fa-icon>
+          Download .apk
+        </a>
       </section>
     </footer>
   </section>
