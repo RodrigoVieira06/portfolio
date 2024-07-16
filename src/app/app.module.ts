@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faAndroid, faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { faCircle, faCircleCheck, faCircleDot, faFileLines } from '@fortawesome/free-regular-svg-icons';
 import { faArrowUpRightFromSquare, faBars, faChevronLeft, faChevronRight, faGlobe, faMoon, faPaperPlane, faSun, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -56,7 +56,8 @@ export class AppModule {
       faChevronLeft,
       faChevronRight,
       faCircle,
-      faCircleDot
+      faCircleDot,
+      faAndroid
     );
   }
 }
