@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { inject } from "@vercel/analytics"
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    inject();
     this.updateVideoSource();
 
     const body = document.body;
