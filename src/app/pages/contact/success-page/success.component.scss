@@ -1,4 +1,7 @@
-.main-contact {
+.main-success {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: justify;
@@ -29,11 +32,10 @@
   align-items: center;
   margin-block: 15px;
   padding: 20px;
-  margin-inline: 25%;
   background-color: var(--main-theme-color);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  font-size: 20px;
+  box-shadow: var(--box-shadow);
+  font-size: 18px;
+  text-align: center;
 
   &__check-icon {
     font-size: 70px;
@@ -49,4 +51,7 @@
     margin-top: 15px;
   }
 
+  @media (min-width: 600px) {
+    font-size: 22px;
+  }
 }

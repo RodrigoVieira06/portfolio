@@ -73,7 +73,7 @@
       gap: 15px;
       overflow-y: auto;
       font-size: 16px;
-      text-align: justify;
+      text-align: start;
       margin-top: 25px;
       height: 100%;
       width: 100%;
@@ -101,6 +101,7 @@
 
       @media(min-width: 1300px) {
         font-size: 22px;
+        text-align: justify;
       }
     }
 

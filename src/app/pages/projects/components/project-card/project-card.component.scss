@@ -24,7 +24,7 @@
 
   &__description {
     padding: 10px;
-    text-align: justify;
+    text-align: start;
     margin-inline: 15px;
     overflow-y: auto;
 
@@ -39,6 +39,10 @@
     &::-webkit-scrollbar-thumb {
       background-color: var(--secondary-color);
       border-radius: 20px;
+    }
+
+    @media (min-width: 1000px) {
+      text-align: justify;
     }
   }
 
