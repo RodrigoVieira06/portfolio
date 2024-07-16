@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  public linkedinLink: string = 'https://www.linkedin.com/in/rodrigovl12/';
+  public linkedinLink: string = 'https://www.linkedin.com/in/rodrigovieira12';
   public githubLink: string = 'https://github.com/RodrigoVieira06';
   public whastappLink: string = 'https://wa.me/5521990012455';
 

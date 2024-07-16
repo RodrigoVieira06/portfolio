@@ -23,7 +23,7 @@ export class ContactComponent {
   public staticFormsKey: string = environment.staticForms.accessKey;
 
   public pathName: string = '';
-  public linkedinLink: string = 'https://www.linkedin.com/in/rodrigovl12/';
+  public linkedinLink: string = 'https://www.linkedin.com/in/rodrigovieira12';
   public githubLink: string = 'https://github.com/RodrigoVieira06';
   public whastappLink: string = 'https://wa.me/5521990012455';
 
