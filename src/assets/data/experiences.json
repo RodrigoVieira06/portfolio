@@ -2,6 +2,148 @@
   {
     "id": "1",
     "role": "Desenvolvedor Frontend",
+    "period": "10/2024 - 12/2024",
+    "enterprisePathLogo": "assets/images/enterprises/levva.png",
+    "enterprise": "LEVVA",
+    "technologies": {
+      "primary": [
+        {
+          "name": "React",
+          "path": "assets/images/logos/reactLogo.png"
+        },
+        {
+          "name": "Typescript",
+          "path": "assets/images/logos/typescriptLogo.png"
+        },
+        {
+          "name": "Lerna",
+          "path": "assets/images/logos/lernaLogo.png"
+        },
+        {
+          "name": "NPM",
+          "path": "assets/images/logos/npmLogo.png"
+        }
+      ],
+      "secondary": [
+        {
+          "name": "Style-Dictionary",
+          "path": "assets/images/logos/styleDictionaryLogo.png"
+        },
+        {
+          "name": "Rollup",
+          "path": "assets/images/logos/rollupLogo.png"
+        },
+        {
+          "name": "Git",
+          "path": "assets/images/logos/gitLogo.png"
+        },
+        {
+          "name": "Azzure DevOps",
+          "path": "assets/images/logos/azzureDevOpsLogo.png"
+        },
+        {
+          "name": "Github Actions",
+          "path": "assets/images/logos/githubActionsLogo.png"
+        },
+        {
+          "name": "Jest",
+          "path": "assets/images/logos/jestLogo.png"
+        },
+        {
+          "name": "Testing Library",
+          "path": "assets/images/logos/testingLibraryLogo.png"
+        },
+        {
+          "name": "ESLint",
+          "path": "assets/images/logos/eslintLogo.png"
+        },
+        {
+          "name": "Prettier",
+          "path": "assets/images/logos/prettierLogo.png"
+        },
+        {
+          "name": "Ant Design",
+          "path": "assets/images/logos/antdLogo.png"
+        }
+      ]
+    },
+    "description": "<p> Trabalhei em um projeto interno da empresa, onde desenvolvi o início de um template de um UI Kit, contendo componentes reutilizáveis em ReactJS com Ant Design. </p> <p> Para a arquitetura do projeto, foi adotada uma estrutura *monorepo* utilizando o gerenciador de publicação de pacotes Lerna, o que facilitou a criação de pacotes web e a padronização da estrutura do código. </p> <p> Na estilização, foram utilizados *design tokens* através da ferramenta Style Dictionary, que gera tokens de estilização, contribuindo para a escalabilidade e consistência da interface do projeto. </p> <p> O projeto contou também com a implementação de testes unitários para os componentes, utilizando Jest e Testing Library, além de ferramentas para padronização de código, como ESLint e Prettier. Também foi realizada a modularização dos componentes e pacotes com as bibliotecas Rollup e TSup. </p> <p> Por fim, foram configuradas pipelines de CI/CD no GitHub Actions, com *jobs* definidos para padronização do código (avaliação do *linter*), execução de testes com cobertura total e, ao final, incremento automático da versão dos pacotes e publicação no NPM para uso externo. </p>"
+  },
+  {
+    "id": "2",
+    "role": "Desenvolvedor Frontend Pleno",
+    "period": "08/2024 - 10/2024",
+    "enterprisePathLogo": "assets/images/enterprises/quay.png",
+    "enterprise": "QUAY Sistemas e Portais",
+    "technologies": {
+      "primary": [
+        {
+          "name": "Angular",
+          "path": "assets/images/logos/angularLogo.png"
+        },
+        {
+          "name": "Typescript",
+          "path": "assets/images/logos/typescriptLogo.png"
+        }
+      ],
+      "secondary": [
+        {
+          "name": "Git",
+          "path": "assets/images/logos/gitLogo.png"
+        },
+        {
+          "name": "Azzure DevOps",
+          "path": "assets/images/logos/azzureDevOpsLogo.png"
+        },
+        {
+          "name": "SASS",
+          "path": "assets/images/logos/sassLogo.png"
+        },
+        {
+          "name": "ng-zorro",
+          "path": "assets/images/logos/ngZorroLogo.png"
+        }
+      ]
+    },
+    "description": "<p> Durante meu período de trabalho na QUAY, participei de um projeto para o cliente SOMA RH, do grupo Equatorial Energia, onde desenvolvi o frontend de um sistema web de soluções para gestão de RH. O principal desafio foi transcrever e adaptar todos os cálculos de uma planilha calculadora, amplamente utilizada pelo cliente, para o ambiente web. </p> <p> Desenvolvi soluções para problemas de performance durante o uso do sistema, implementando cálculos dinâmicos diretamente no frontend. Essa abordagem simulava o comportamento de uma planilha Excel, atendendo às expectativas do cliente e garantindo uma experiência familiar. Além disso, trabalhei na criação de interfaces atraentes e responsivas, seguindo rigorosamente as especificações fornecidas pelo designer. </p> <p> Para o desenvolvimento frontend, utilizei as tecnologias Angular 17 e Ng-Zorro, com suporte a TypeScript. O projeto também envolveu o uso de Git e Azure DevOps (TFS) para controle de versão e gestão de tarefas. </p>"
+  },
+  {
+    "id": "3",
+    "role": "Desenvolvedor Frontend",
+    "period": "05/2024 - 08/2024",
+    "enterprisePathLogo": "assets/images/enterprises/lipcat.png",
+    "enterprise": "LIPCAT",
+    "technologies": {
+      "primary": [
+        {
+          "name": "React",
+          "path": "assets/images/logos/reactLogo.png"
+        },
+        {
+          "name": "NextJS",
+          "path": "assets/images/logos/nextJSLogo.png"
+        },
+        {
+          "name": "Typescript",
+          "path": "assets/images/logos/typescriptLogo.png"
+        }
+      ],
+      "secondary": [
+        {
+          "name": "Tailwind",
+          "path": "assets/images/logos/tailwindLogo.png"
+        },
+        {
+          "name": "Material design",
+          "path": "assets/images/logos/materialDesignLogo.png"
+        }
+      ]
+    },
+    "description": "<p> Desenvolvi um sistema para um laboratório de química da UFRJ (Universidade Federal do Rio de Janeiro), composto por uma landing page e um sistema intranet. O projeto foi elaborado para promover o site do laboratório de intensificação de processos e catálise, oferecendo funcionalidades tanto para o público geral quanto para uso interno por alunos e professores. </p> <p> A landing page apresenta as informações fundamentais da instituição, como descrição do laboratório, serviços oferecidos e uma aba \"Fale Conosco\" para envio de solicitações de serviços. Já o sistema intranet possibilita a gestão de conteúdos exibidos na página pública, como cadastro de apoiadores, produções científicas e membros da equipe. Além disso, conta com funcionalidades como sistema de agendamento, materiais de apoio e gerenciamento de solicitações recebidas. </p> <p> A aplicação foi desenvolvida com foco em responsividade e usabilidade, utilizando tecnologias como ReactJS, NextJS, Tailwind CSS e Material Design. Para atender a um público diversificado, foi implementado suporte à internacionalização com i18n. </p>"
+  },
+  {
+    "id": "4",
+    "role": "Desenvolvedor Frontend",
     "period": "01/2022 - 05/2024",
     "enterprisePathLogo": "assets/images/enterprises/nasajon.png",
     "enterprise": "Nasajon Sistemas",
@@ -47,10 +189,10 @@
         }
       ]
     },
-    "description": "<p> Neste cargo atuei como desenvolvedor frontend web e mobile, desenvolvendo e prestando manutenção em aplicações AngularJS com Typescript, Docker e Webpack e um app Mobile utilizando Flutter com Modular, Flutter Triple, Clean architecture, multi repo, etc. Além disso, participei de squads em sprints planejadas de forma mensal, com reuniões diárias, Sprint Planning, retrospectiva e code review, sempre visando atingir metas de OKRs trimestrais, realizando reuniões de Grooming para traçar o melhor planejamento com a equipe. </p> <p> Após muito estudo na área de frontend, me aprimorando com as principais tecnologias do mercado, realizei uma transição de carreira para começar a desenvolver o frontend de uma Dashboard de automação de processos internos da empresa e de seus clientes, onde utilizei as bibliotecas de UI da empresa no meu Projeto AngularJS. O projeto foi um sucesso e, junto com um backend que realizava tais processos, conseguimos manter o sistema em produção e que roda até hoje internamente na empresa. </p> <p> Com a estabilidade do projeto, ingressei em um novo squad para atuar em um projeto referente a um sistema de RH, atuando com os módulos de entrada e saída de colaboradores. Inicialmente prestei manutenção no código existente e, conforme fui me habituando com as regras de negócio e funcionamento da aplicação, desenvolvi novas funcionalidades conforme a necessidade dos clientes e das metas trimestrais. Após evoluir as funcionalidades, passei a codar para todo o sistema de RH, atuando em módulos como controle de férias, solicitações colaboradores, cadastro de vagas, configurações da aplicação e etc. </p> <p> Durante minha jornada no cargo, recebi o desafio de desenvolver um POC para provar eficácia da framework Flutter nas aplicações já existentes, com o objetivo de começar uma troca de tecnologia, pois o AngularJS fora descontinuado. Desenvolvi um projeto contendo 2 módulos do aplicativo de RH, utilizando Flutter com o Modular, Flutter Triple e uma estrutura mono repo. </p> <p> Com o sucesso da POC e da decisão da empresa de iniciar novos projetos com Flutter, recebi o treinamento da FTeam, fornecido pela Nasajon, para ter competência de atuar nos projetos Mobile que estavam nascendo na empresa. Neste treinamento, aprendi recursos e técnicas avançadas da framework Flutter, como a arquitetura Clean Dart, lib Modular (para modularizar a aplicação), o gerenciamento de estados com Flutter Triple, armazenamento interno com Hive, estrutura Mono repo, técnicas de clean code, testes unitários com o Mocktail, etc. </p> <p> Com isso, atuei num aplicativo de auto admissão de colaboradores que possuía uma integração com o sistema web de RH. Nele, aprendi a realizar o deploy para a loja do Google Play, Apple Store e para a Web, aprimorando meu conhecimento no desenvolvimento mobile. </p> <p> Essa experiência me ajudou a me especializar em engenharia de software e a ter adaptabilidade, pois entender estes conceitos, me fizeram um desenvolvedor completo, e que não importa a tecnologia a ser utilizada, com estudos e um bom planejamento, é possível resolver todos os problemas de negócio. </p>"
+    "description": "<p> Neste cargo, atuei como desenvolvedor frontend web e mobile, desenvolvendo e dando manutenção em aplicações AngularJS com TypeScript, Docker e Webpack, além de um aplicativo mobile utilizando Flutter com as bibliotecas Modular, Flutter Triple e a arquitetura Clean Architecture, dentro de um ambiente multi-repo. </p> <p> Participei de squads organizados em *sprints* mensais, com reuniões diárias, *Sprint Planning*, retrospectivas e *code reviews*, sempre alinhados às metas trimestrais de OKRs. Também colaborei em reuniões de *Grooming*, contribuindo para o planejamento estratégico e a priorização de tarefas junto à equipe. </p> <p> Após me aprofundar em estudos na área de frontend, transicionei para o desenvolvimento de uma dashboard de automação de processos internos da empresa e de seus clientes. Nesse projeto, utilizei bibliotecas de UI da empresa em uma aplicação AngularJS. O sistema foi um sucesso, entrando em produção e funcionando até hoje internamente. </p> <p> Com a estabilidade do projeto, fui alocado em um novo squad para atuar no desenvolvimento de um sistema de RH, inicialmente focado nos módulos de entrada e saída de colaboradores. Após me familiarizar com as regras de negócio, desenvolvi novas funcionalidades conforme as necessidades dos clientes e as metas trimestrais. Eventualmente, passei a contribuir em todo o sistema de RH, incluindo módulos como controle de férias, solicitações de colaboradores, cadastro de vagas e configurações gerais. </p> <p> Durante minha jornada, recebi o desafio de desenvolver uma POC (Prova de Conceito) para validar a eficácia do Flutter como substituto do AngularJS, que havia sido descontinuado. A POC consistiu no desenvolvimento de dois módulos do aplicativo de RH, utilizando Flutter com Modular, Flutter Triple e uma estrutura *monorepo*. O sucesso da POC levou à decisão da empresa de adotar Flutter para novos projetos. </p> <p> Como parte desse processo, recebi treinamento pela FTeam, promovido pela Nasajon, onde aprendi técnicas avançadas de Flutter, incluindo Clean Dart, Modular para modularização, gerenciamento de estados com Flutter Triple, armazenamento interno com Hive, estrutura *monorepo*, clean code e testes unitários com Mocktail. </p> <p> Após o treinamento, atuei no desenvolvimento de um aplicativo de auto-admissão de colaboradores, integrado ao sistema web de RH. Nesse projeto, adquiri experiência em deploys para Google Play, Apple Store e Web, o que ampliou meu conhecimento em desenvolvimento mobile e publicação de aplicações. </p> <p> Essa experiência consolidou minha especialização em engenharia de software e minha adaptabilidade. Entender conceitos como clean architecture, modularização e testes me tornou um desenvolvedor mais completo, capaz de resolver problemas de negócio independentemente da tecnologia utilizada, com estudo, planejamento e execução. </p>"
   },
   {
-    "id": "2",
+    "id": "5",
     "role": "Assistente de testes e qualidade",
     "period": "11/2020 - 12/2021",
     "enterprisePathLogo": "assets/images/enterprises/nasajon.png",
@@ -79,7 +221,7 @@
     "description": "<p> Após ser efetivado, tive a responsabilidade de trabalhar na automação dos testes de regressão ainda utilizando Python. Foram inúmeros cases de testes a serem automatizados e, dentro de um planejamento junto à squad de QA, traçamos metas e fizemos um planejamento dentro de sprints para atingir todas as entregas dentro dos prazos estipulados. </p> <p> Aqui também tive a experiência de trabalhar com Git e Github, metodologias ágeis com daily scrum, sprint planning, retrospectiva e code review. </p>"
   },
   {
-    "id": "3",
+    "id": "6",
     "role": "Estagiário de testes e qualidade",
     "period": "07/2019 - 10/2020",
     "enterprisePathLogo": "assets/images/enterprises/nasajon.png",
